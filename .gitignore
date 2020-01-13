@@ -1,0 +1,14 @@
+# Directoris
+.vs/
+bin/
+bin-int/
+
+
+# Files
+#*.user
+#*.vcxproj
+#*.filters
+
+
+# .obj 3d model files unignore
+!Engine/models/*.obj
