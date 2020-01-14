@@ -32,7 +32,15 @@ int CALLBACK WinMain(
 	);
 	// show the damn window
 	ShowWindow(hWnd, SW_SHOW);
-	while (true);
+
+	// message pump
+	MSG msg;
+	while (GetMessage(&msg, nullptr, 0, 0) > 0)
+	{
+		TranslateMessage(&msg);
+		DispatchMessage(&msg);
+	}
+
 	return 0;
 }
 
@@ -43,4 +51,8 @@ WNDCLASSEX
 https://docs.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-wndclassexa
 CreateWindowEx
 "https://docs.microsoft.com/en-us/previous-versions/ms960010(v%3Dmsdn.10)"
+GetMessage function
+https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getmessage
+MSG structure
+https://docs.microsoft.com/it-it/windows/win32/api/winuser/ns-winuser-msg
 */
