@@ -1,5 +1,6 @@
 #include <Windows.h>
 #include "WindowsMessageMap.h"
+#include <sstream>
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
@@ -10,6 +11,18 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	{
 	case WM_CLOSE:
 		PostQuitMessage(69);
+		break;
+	case WM_KEYDOWN:
+		if (wParam == 'D')
+		{
+			SetWindowText(hWnd, "Respects");
+		}
+		break;
+	case WM_KEYUP:
+		if (wParam == 'F')
+		{
+			SetWindowText(hWnd, "Dangerfield");
+		}
 		break;
 	}
 
@@ -83,4 +96,8 @@ DefWindowProcA function
 https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-defwindowproca
 List Of Windows Messages
 https://wiki.winehq.org/List_Of_Windows_Messages
+WM_KEYDOWN message
+https://docs.microsoft.com/en-us/windows/win32/inputdev/wm-keydown
+Virtual-Key Codes
+https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 */
