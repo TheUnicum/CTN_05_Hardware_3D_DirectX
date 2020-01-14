@@ -17,50 +17,49 @@
 *	You should have received a copy of the GNU General Public License					  *
 *	along with The Chili Direct3D Engine.  If not, see <http://www.gnu.org/licenses/>.    *
 ******************************************************************************************/
-#include "Window.h"
+#pragma once
 
+// target Windows 7 or later
+#define _WIN32_WINNT 0x0601
+#include <sdkddkver.h>
+// The following #defines disable a bunch of unused windows stuff. If you 
+// get weird errors when trying to do some windows stuff, try removing some
+// (or all) of these defines (it will increase build time though).
+#define WIN32_LEAN_AND_MEAN
+#define NOGDICAPMASKS
+#define NOSYSMETRICS
+#define NOMENUS
+#define NOICONS
+#define NOSYSCOMMANDS
+#define NORASTEROPS
+#define OEMRESOURCE
+#define NOATOM
+#define NOCLIPBOARD
+#define NOCOLOR
+#define NOCTLMGR
+#define NODRAWTEXT
+#define NOKERNEL
+#define NONLS
+#define NOMEMMGR
+#define NOMETAFILE
+#define NOMINMAX
+#define NOOPENFILE
+#define NOSCROLL
+#define NOSERVICE
+#define NOSOUND
+#define NOTEXTMETRIC
+#define NOWH
+#define NOCOMM
+#define NOKANJI
+#define NOHELP
+#define NOPROFILER
+#define NODEFERWINDOWPOS
+#define NOMCX
+#define NORPC
+#define NOPROXYSTUB
+#define NOIMAGE
+#define NOTAPE
 
-int CALLBACK WinMain(
-	HINSTANCE hInstance,
-	HINSTANCE hPrevInstance,
-	LPSTR     lpCmdLine,
-	int       nCmdShow)
-{
-	Window wnd(800, 300, "Donkey Fart Box");
+#define STRICT
 
-	MSG msg;
-	BOOL gResult;
-	while ((gResult = GetMessage(&msg, nullptr, 0, 0)) > 0)
-	{
-		TranslateMessage(&msg);
-		DispatchMessage(&msg);
-	}
-
-	if (gResult == -1)
-	{
-		return -1;
-	}
-
-	return msg.wParam;
-}
-
-/*
-WinMain function
-https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-winmain
-WNDCLASSEX
-https://docs.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-wndclassexa
-CreateWindowEx
-"https://docs.microsoft.com/en-us/previous-versions/ms960010(v%3Dmsdn.10)"
-GetMessage function
-https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getmessage
-MSG structure
-https://docs.microsoft.com/it-it/windows/win32/api/winuser/ns-winuser-msg
-DefWindowProcA function
-https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-defwindowproca
-List Of Windows Messages
-https://wiki.winehq.org/List_Of_Windows_Messages
-WM_KEYDOWN message
-https://docs.microsoft.com/en-us/windows/win32/inputdev/wm-keydown
-Virtual-Key Codes
-https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
-*/
+#include <Windows.h>

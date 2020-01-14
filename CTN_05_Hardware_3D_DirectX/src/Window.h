@@ -17,50 +17,39 @@
 *	You should have received a copy of the GNU General Public License					  *
 *	along with The Chili Direct3D Engine.  If not, see <http://www.gnu.org/licenses/>.    *
 ******************************************************************************************/
-#include "Window.h"
+#pragma once
+#include "ChiliWin.h"
 
 
-int CALLBACK WinMain(
-	HINSTANCE hInstance,
-	HINSTANCE hPrevInstance,
-	LPSTR     lpCmdLine,
-	int       nCmdShow)
+class Window
 {
-	Window wnd(800, 300, "Donkey Fart Box");
-
-	MSG msg;
-	BOOL gResult;
-	while ((gResult = GetMessage(&msg, nullptr, 0, 0)) > 0)
+private:
+	// singleton manages registration/cleanup of window class
+	class WindowClass
 	{
-		TranslateMessage(&msg);
-		DispatchMessage(&msg);
-	}
-
-	if (gResult == -1)
-	{
-		return -1;
-	}
-
-	return msg.wParam;
-}
-
-/*
-WinMain function
-https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-winmain
-WNDCLASSEX
-https://docs.microsoft.com/en-us/windows/win32/api/winuser/ns-winuser-wndclassexa
-CreateWindowEx
-"https://docs.microsoft.com/en-us/previous-versions/ms960010(v%3Dmsdn.10)"
-GetMessage function
-https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getmessage
-MSG structure
-https://docs.microsoft.com/it-it/windows/win32/api/winuser/ns-winuser-msg
-DefWindowProcA function
-https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-defwindowproca
-List Of Windows Messages
-https://wiki.winehq.org/List_Of_Windows_Messages
-WM_KEYDOWN message
-https://docs.microsoft.com/en-us/windows/win32/inputdev/wm-keydown
-Virtual-Key Codes
-https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
-*/
+	public:
+		static const char* GetName() noexcept;
+		static HINSTANCE GetInstance() noexcept;
+	private:
+		WindowClass() noexcept;
+		~WindowClass();
+		WindowClass(const WindowClass&) = delete;
+		WindowClass& operator=(const WindowClass&) = delete;
+		static constexpr const char* wndClassName = "Chili Direct3D Engine Window";
+		static WindowClass wndClass;
+		HINSTANCE hInst;
+	};
+public:
+	Window(int width, int height, const char* name) noexcept;
+	~Window();
+	Window(const Window&) = delete;
+	Window& operator=(const Window&) = delete;
+private:
+	static LRESULT CALLBACK HandleMsgSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept;
+	static LRESULT CALLBACK HandleMsgThunk(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept;
+	LRESULT HandleMsg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept;
+private:
+	int width;
+	int height;
+	HWND hWnd;
+};
