@@ -1,7 +1,11 @@
 #include <Windows.h>
+#include "WindowsMessageMap.h"
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
+	static WindowsMessageMap mm;
+	OutputDebugString(mm(msg, lParam, wParam).c_str());
+
 	switch (msg)
 	{
 	case WM_CLOSE:
@@ -77,4 +81,6 @@ MSG structure
 https://docs.microsoft.com/it-it/windows/win32/api/winuser/ns-winuser-msg
 DefWindowProcA function
 https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-defwindowproca
+List Of Windows Messages
+https://wiki.winehq.org/List_Of_Windows_Messages
 */

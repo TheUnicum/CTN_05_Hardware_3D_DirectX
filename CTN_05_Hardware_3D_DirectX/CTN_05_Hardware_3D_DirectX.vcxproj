@@ -167,6 +167,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp" />
+    <ClCompile Include="src\WindowsMessageMap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\WindowsMessageMap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

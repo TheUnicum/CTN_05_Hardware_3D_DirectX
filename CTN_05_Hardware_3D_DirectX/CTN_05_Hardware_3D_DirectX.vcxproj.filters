@@ -18,5 +18,13 @@
     <ClCompile Include="src\WinMain.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\WindowsMessageMap.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\WindowsMessageMap.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
