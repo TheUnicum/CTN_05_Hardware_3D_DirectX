@@ -172,10 +172,17 @@
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\resource.h" />
     <ClInclude Include="src\ChiliException.h" />
     <ClInclude Include="src\ChiliWin.h" />
     <ClInclude Include="src\WindowsMessageMap.h" />
     <ClInclude Include="src\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\CTN_05_Hardware_3D_DirectX.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\chili.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

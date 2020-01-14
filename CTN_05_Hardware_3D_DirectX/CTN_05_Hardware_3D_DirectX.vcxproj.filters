@@ -41,5 +41,18 @@
     <ClInclude Include="src\ChiliException.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\resource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\chili.ico">
+      <Filter>File di risorse</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\CTN_05_Hardware_3D_DirectX.rc">
+      <Filter>File di risorse</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
