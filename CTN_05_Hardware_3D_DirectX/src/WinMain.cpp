@@ -86,4 +86,6 @@ https://docs.microsoft.com/en-us/windows/win32/direct3ddxgi/d3d10-graphics-progr
 *****
 Pipelines for Direct3D Version 11
 https://docs.microsoft.com/en-us/windows-hardware/drivers/display/pipelines-for-direct3d-version-11
+Primitive Topologies
+https://docs.microsoft.com/en-us/windows/win32/direct3d11/d3d10-graphics-programming-guide-primitive-topologies
 */
