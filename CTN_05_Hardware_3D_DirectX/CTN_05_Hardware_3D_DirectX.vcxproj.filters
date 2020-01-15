@@ -42,6 +42,9 @@
     <ClCompile Include="src\Graphics.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\dxerr.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -74,6 +77,9 @@
     <ClInclude Include="src\Graphics.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\dxerr.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -84,5 +90,17 @@
     <ResourceCompile Include="src\CTN_05_Hardware_3D_DirectX.rc">
       <Filter>File di risorse</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\CTN_05_Hardware_3D_DirectX.aps" />
+    <None Include="src\DXGetErrorDescription.inl">
+      <Filter>File di intestazione</Filter>
+    </None>
+    <None Include="src\DXGetErrorString.inl">
+      <Filter>File di intestazione</Filter>
+    </None>
+    <None Include="src\DXTrace.inl">
+      <Filter>File di intestazione</Filter>
+    </None>
   </ItemGroup>
 </Project>
