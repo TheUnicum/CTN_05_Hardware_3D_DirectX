@@ -76,4 +76,11 @@ Generating Interface UUIDs
 https://docs.microsoft.com/en-us/windows/win32/rpc/generating-interface-uuids
 CoCreateInstance function
 https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance
+T12
+IDXGIFactory2 interface
+https://docs.microsoft.com/en-us/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgifactory2
+D3D11CreateDeviceAndSwapChain function
+https://docs.microsoft.com/en-us/windows/win32/api/d3d11/nf-d3d11-d3d11createdeviceandswapchain
+DXGI Overview
+https://docs.microsoft.com/en-us/windows/win32/direct3ddxgi/d3d10-graphics-programming-guide-dxgi
 */
