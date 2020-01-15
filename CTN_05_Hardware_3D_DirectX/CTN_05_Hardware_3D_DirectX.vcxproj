@@ -166,6 +166,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\DxgiInfoManager.cpp" />
     <ClCompile Include="src\ChiliTimer.cpp" />
     <ClCompile Include="src\App.cpp" />
     <ClCompile Include="src\dxerr.cpp" />
@@ -178,6 +179,7 @@
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\DxgiInfoManager.h" />
     <ClInclude Include="src\dxerr.h" />
     <ClInclude Include="src\Graphics.h" />
     <ClInclude Include="src\ChiliTimer.h" />

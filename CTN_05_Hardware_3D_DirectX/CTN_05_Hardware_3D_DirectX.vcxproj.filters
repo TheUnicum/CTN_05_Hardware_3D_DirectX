@@ -45,6 +45,9 @@
     <ClCompile Include="src\dxerr.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\DxgiInfoManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -78,6 +81,9 @@
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="src\dxerr.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DxgiInfoManager.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
