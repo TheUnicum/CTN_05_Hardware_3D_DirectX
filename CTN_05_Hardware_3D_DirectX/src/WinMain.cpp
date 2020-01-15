@@ -67,4 +67,13 @@ Virtual-Key Codes
 https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 PeekMessageA function
 https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-peekmessagea
+****COM****
+IUnknown interface
+https://docs.microsoft.com/en-us/windows/win32/api/unknwn/nn-unknwn-iunknown
+IUnknown::QueryInterface method
+https://docs.microsoft.com/en-us/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface%28refiid_void%29
+Generating Interface UUIDs
+https://docs.microsoft.com/en-us/windows/win32/rpc/generating-interface-uuids
+CoCreateInstance function
+https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance
 */
