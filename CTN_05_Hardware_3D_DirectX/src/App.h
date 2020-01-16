@@ -1,7 +1,6 @@
 #pragma once
 #include "Window.h"
 #include "ChiliTimer.h"
-#include <sstream>
 
 class App
 {
