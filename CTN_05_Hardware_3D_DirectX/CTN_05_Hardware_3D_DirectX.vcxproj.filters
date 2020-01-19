@@ -34,6 +34,12 @@
     <Filter Include="File di intestazione\Geometry">
       <UniqueIdentifier>{d1b9e513-dc28-440c-8583-cbdb95029f4e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="File di intestazione\imgui">
+      <UniqueIdentifier>{75bcd706-a314-4504-a553-713e4e437bd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\imgui">
+      <UniqueIdentifier>{4ec2c7b9-ec01-45c5-a043-acc8d7b1d5e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -46,9 +52,6 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="src\ChiliException.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Keyboard.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="src\Mouse.cpp">
@@ -122,6 +125,27 @@
     </ClCompile>
     <ClCompile Include="src\SkinnedBox.cpp">
       <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui.cpp">
+      <Filter>File di origine\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_demo.cpp">
+      <Filter>File di origine\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_draw.cpp">
+      <Filter>File di origine\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_impl_dx11.cpp">
+      <Filter>File di origine\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_impl_win32.cpp">
+      <Filter>File di origine\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\imgui\imgui_widgets.cpp">
+      <Filter>File di origine\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Keyboard.cpp">
+      <Filter>File di origine\imgui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -250,6 +274,30 @@
     </ClInclude>
     <ClInclude Include="src\SkinnedBox.h">
       <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui\imconfig.h">
+      <Filter>File di intestazione\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui\imgui.h">
+      <Filter>File di intestazione\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui\imgui_impl_dx11.h">
+      <Filter>File di intestazione\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui\imgui_impl_win32.h">
+      <Filter>File di intestazione\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui\imgui_internal.h">
+      <Filter>File di intestazione\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui\imstb_rectpack.h">
+      <Filter>File di intestazione\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui\imstb_textedit.h">
+      <Filter>File di intestazione\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\imgui\imstb_truetype.h">
+      <Filter>File di intestazione\imgui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

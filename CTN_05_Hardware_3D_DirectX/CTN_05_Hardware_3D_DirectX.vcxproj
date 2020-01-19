@@ -175,6 +175,12 @@
     <ClCompile Include="src\dxerr.cpp" />
     <ClCompile Include="src\GDIPlusManager.cpp" />
     <ClCompile Include="src\Graphics.cpp" />
+    <ClCompile Include="src\imgui\imgui.cpp" />
+    <ClCompile Include="src\imgui\imgui_demo.cpp" />
+    <ClCompile Include="src\imgui\imgui_draw.cpp" />
+    <ClCompile Include="src\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="src\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="src\imgui\imgui_widgets.cpp" />
     <ClCompile Include="src\IndexBuffer.cpp" />
     <ClCompile Include="src\InputLayout.cpp" />
     <ClCompile Include="src\Melon.cpp" />
@@ -204,6 +210,14 @@
     <ClInclude Include="src\Drawable.h" />
     <ClInclude Include="src\DrawableBase.h" />
     <ClInclude Include="src\GDIPlusManager.h" />
+    <ClInclude Include="src\imgui\imconfig.h" />
+    <ClInclude Include="src\imgui\imgui.h" />
+    <ClInclude Include="src\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="src\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="src\imgui\imgui_internal.h" />
+    <ClInclude Include="src\imgui\imstb_rectpack.h" />
+    <ClInclude Include="src\imgui\imstb_textedit.h" />
+    <ClInclude Include="src\imgui\imstb_truetype.h" />
     <ClInclude Include="src\IndexBuffer.h" />
     <ClInclude Include="src\ConstantBuffers.h" />
     <ClInclude Include="src\BindableBase.h" />
