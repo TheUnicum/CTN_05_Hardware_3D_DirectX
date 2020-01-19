@@ -2,7 +2,7 @@
 .vs/
 bin/
 bin-int/
-/hw3d/imgui.ini
+/CTN_05_Hardware_3D_DirectX/imgui.ini
 
 # Files
 #*.user
