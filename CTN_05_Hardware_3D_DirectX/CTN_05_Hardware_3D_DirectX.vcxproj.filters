@@ -16,6 +16,21 @@
     <Filter Include="Shader">
       <UniqueIdentifier>{bcd53d39-dd43-4047-a4e7-beeeb5639ea1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="File di intestazione\Macros">
+      <UniqueIdentifier>{f11f7b20-3737-4532-9bec-359b0294ad1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di intestazione\Drawable">
+      <UniqueIdentifier>{6a7e37c5-f960-4206-9a71-b5decdbef9eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\Bindable">
+      <UniqueIdentifier>{7e4d3d81-d0bd-4446-9582-6fa69c36a3d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di intestazione\Bindable">
+      <UniqueIdentifier>{c1ec2549-e840-4edd-8366-e5e897af908a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\Drawable">
+      <UniqueIdentifier>{3b0bc15b-08b3-42c4-b2fc-56cdd2f32885}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -51,6 +66,36 @@
     <ClCompile Include="src\DxgiInfoManager.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Bindable.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputLayout.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IndexBuffer.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PixelShader.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Topology.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TransformCbuf.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexBuffer.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexShader.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Drawable.cpp">
+      <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Box.cpp">
+      <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -83,17 +128,53 @@
     <ClInclude Include="src\Graphics.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="src\dxerr.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
     <ClInclude Include="src\DxgiInfoManager.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="src\GraphicsThrowMacros.h">
-      <Filter>File di intestazione</Filter>
+      <Filter>File di intestazione\Macros</Filter>
     </ClInclude>
     <ClInclude Include="src\WindowsThrowMacros.h">
+      <Filter>File di intestazione\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Bindable.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BindableBase.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConstantBuffers.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IndexBuffer.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputLayout.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PixelShader.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Topology.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformCbuf.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexBuffer.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexShader.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dxerr.h">
       <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Drawable.h">
+      <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Box.h">
+      <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
