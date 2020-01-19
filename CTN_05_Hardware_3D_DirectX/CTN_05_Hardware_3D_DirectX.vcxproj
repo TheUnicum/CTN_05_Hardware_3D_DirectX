@@ -175,6 +175,7 @@
     <ClCompile Include="src\dxerr.cpp" />
     <ClCompile Include="src\GDIPlusManager.cpp" />
     <ClCompile Include="src\Graphics.cpp" />
+    <ClCompile Include="src\ImguiManager.cpp" />
     <ClCompile Include="src\imgui\imgui.cpp" />
     <ClCompile Include="src\imgui\imgui_demo.cpp" />
     <ClCompile Include="src\imgui\imgui_draw.cpp" />
@@ -210,6 +211,7 @@
     <ClInclude Include="src\Drawable.h" />
     <ClInclude Include="src\DrawableBase.h" />
     <ClInclude Include="src\GDIPlusManager.h" />
+    <ClInclude Include="src\ImguiManager.h" />
     <ClInclude Include="src\imgui\imconfig.h" />
     <ClInclude Include="src\imgui\imgui.h" />
     <ClInclude Include="src\imgui\imgui_impl_dx11.h" />
