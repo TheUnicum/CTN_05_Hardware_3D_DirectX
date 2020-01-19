@@ -9,6 +9,7 @@ bin-int/
 #*.vcxproj
 #*.filters
 
+*.cso
 
 # .obj 3d model files unignore
 !Engine/models/*.obj
