@@ -173,6 +173,7 @@
     <ClCompile Include="src\ChiliTimer.cpp" />
     <ClCompile Include="src\App.cpp" />
     <ClCompile Include="src\dxerr.cpp" />
+    <ClCompile Include="src\GDIPlusManager.cpp" />
     <ClCompile Include="src\Graphics.cpp" />
     <ClCompile Include="src\IndexBuffer.cpp" />
     <ClCompile Include="src\InputLayout.cpp" />
@@ -182,6 +183,7 @@
     <ClCompile Include="src\ChiliException.cpp" />
     <ClCompile Include="src\PixelShader.cpp" />
     <ClCompile Include="src\Pyramid.cpp" />
+    <ClCompile Include="src\Surface.cpp" />
     <ClCompile Include="src\Topology.cpp" />
     <ClCompile Include="src\TransformCbuf.cpp" />
     <ClCompile Include="src\VertexBuffer.cpp" />
@@ -197,6 +199,7 @@
     <ClInclude Include="src\Cube.h" />
     <ClInclude Include="src\Drawable.h" />
     <ClInclude Include="src\DrawableBase.h" />
+    <ClInclude Include="src\GDIPlusManager.h" />
     <ClInclude Include="src\IndexBuffer.h" />
     <ClInclude Include="src\ConstantBuffers.h" />
     <ClInclude Include="src\BindableBase.h" />
@@ -220,6 +223,7 @@
     <ClInclude Include="src\ChiliException.h" />
     <ClInclude Include="src\ChiliWin.h" />
     <ClInclude Include="src\Sphere.h" />
+    <ClInclude Include="src\Surface.h" />
     <ClInclude Include="src\Topology.h" />
     <ClInclude Include="src\TransformCbuf.h" />
     <ClInclude Include="src\VertexBuffer.h" />
