@@ -147,6 +147,9 @@
     <ClCompile Include="src\Keyboard.cpp">
       <Filter>File di origine\imgui</Filter>
     </ClCompile>
+    <ClCompile Include="src\ImguiManager.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -298,6 +301,9 @@
     </ClInclude>
     <ClInclude Include="src\imgui\imstb_truetype.h">
       <Filter>File di intestazione\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImguiManager.h">
+      <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
