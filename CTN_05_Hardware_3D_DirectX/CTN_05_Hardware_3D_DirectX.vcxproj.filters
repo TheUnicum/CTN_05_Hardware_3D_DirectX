@@ -176,6 +176,9 @@
     <ClInclude Include="src\Box.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
+    <ClInclude Include="src\DrawableBase.h">
+      <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">

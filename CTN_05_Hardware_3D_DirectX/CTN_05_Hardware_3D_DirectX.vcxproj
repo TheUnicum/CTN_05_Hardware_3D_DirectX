@@ -191,6 +191,7 @@
   <ItemGroup>
     <ClInclude Include="src\Box.h" />
     <ClInclude Include="src\Drawable.h" />
+    <ClInclude Include="src\DrawableBase.h" />
     <ClInclude Include="src\IndexBuffer.h" />
     <ClInclude Include="src\ConstantBuffers.h" />
     <ClInclude Include="src\BindableBase.h" />
