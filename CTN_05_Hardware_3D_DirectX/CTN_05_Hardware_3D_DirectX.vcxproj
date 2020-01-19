@@ -190,6 +190,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Box.h" />
+    <ClInclude Include="src\ChiliMath.h" />
+    <ClInclude Include="src\Cone.h" />
+    <ClInclude Include="src\Cube.h" />
     <ClInclude Include="src\Drawable.h" />
     <ClInclude Include="src\DrawableBase.h" />
     <ClInclude Include="src\IndexBuffer.h" />
@@ -202,13 +205,17 @@
     <ClInclude Include="src\Graphics.h" />
     <ClInclude Include="src\ChiliTimer.h" />
     <ClInclude Include="src\App.h" />
+    <ClInclude Include="src\IndexedTriangleList.h" />
     <ClInclude Include="src\InputLayout.h" />
     <ClInclude Include="src\Mouse.h" />
     <ClInclude Include="src\Keyboard.h" />
     <ClInclude Include="src\PixelShader.h" />
+    <ClInclude Include="src\Plane.h" />
+    <ClInclude Include="src\Prism.h" />
     <ClInclude Include="src\resource.h" />
     <ClInclude Include="src\ChiliException.h" />
     <ClInclude Include="src\ChiliWin.h" />
+    <ClInclude Include="src\Sphere.h" />
     <ClInclude Include="src\Topology.h" />
     <ClInclude Include="src\TransformCbuf.h" />
     <ClInclude Include="src\VertexBuffer.h" />
