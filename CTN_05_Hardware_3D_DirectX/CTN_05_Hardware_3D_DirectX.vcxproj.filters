@@ -120,6 +120,9 @@
     <ClCompile Include="src\Sampler.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
+    <ClCompile Include="src\SkinnedBox.cpp">
+      <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -244,6 +247,9 @@
     </ClInclude>
     <ClInclude Include="src\Sampler.h">
       <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkinnedBox.h">
+      <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
