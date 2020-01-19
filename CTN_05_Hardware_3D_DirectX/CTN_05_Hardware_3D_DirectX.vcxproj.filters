@@ -99,6 +99,12 @@
     <ClCompile Include="src\Box.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
+    <ClCompile Include="src\Melon.cpp">
+      <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pyramid.cpp">
+      <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -203,6 +209,12 @@
     <ClInclude Include="src\ChiliMath.h">
       <Filter>File di intestazione\Geometry</Filter>
     </ClInclude>
+    <ClInclude Include="src\Melon.h">
+      <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pyramid.h">
+      <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -227,10 +239,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="src\VertexShader.hlsl">
+    <FxCompile Include="src\ColorIndexVS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
-    <FxCompile Include="src\PixelShader.hlsl">
+    <FxCompile Include="src\ColorIndexPS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="src\ColorBlendPS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="src\ColorBlendVS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
   </ItemGroup>
