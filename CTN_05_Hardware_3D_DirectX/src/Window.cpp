@@ -20,6 +20,7 @@
 #include "Window.h"
 #include <sstream>
 #include "resource.h"
+#include "WindowsThrowMacros.h"
 
 
 // Window Class Stuff
@@ -145,7 +146,6 @@ Graphics& Window::Gfx()
 	return *pGfx;
 }
 
-
 LRESULT CALLBACK  Window::HandleMsgSetup(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noexcept
 {
 	// use create parameter passed in from CreateWindow() to store window class pointer at WinAPI side
@@ -239,7 +239,6 @@ LRESULT Window::HandleMsg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noe
 	{
 		const POINTS pt = MAKEPOINTS(lParam);
 		mouse.OnLeftPressed(pt.x, pt.y);
-		// bring window to foreground on lclick client region
 		SetForegroundWindow(hWnd);
 		break;
 	}
@@ -286,6 +285,7 @@ LRESULT Window::HandleMsg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) noe
 	return DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
+
 // Window Exception Stuff
 std::string Window::Exception::TranslateErrorCode(HRESULT hr) noexcept
 {
@@ -308,6 +308,7 @@ std::string Window::Exception::TranslateErrorCode(HRESULT hr) noexcept
 	LocalFree(pMsgBuf);
 	return errorString;
 }
+
 
 Window::HrException::HrException(int line, const char* file, HRESULT hr) noexcept
 	:
