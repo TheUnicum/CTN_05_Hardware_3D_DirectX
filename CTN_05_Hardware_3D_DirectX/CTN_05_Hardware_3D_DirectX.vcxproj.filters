@@ -102,14 +102,8 @@
     <ClCompile Include="src\Box.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
-    <ClCompile Include="src\Melon.cpp">
-      <Filter>File di origine\Drawable</Filter>
-    </ClCompile>
     <ClCompile Include="src\Pyramid.cpp">
       <Filter>File di origine\Drawable</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Surface.cpp">
-      <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="src\GDIPlusManager.cpp">
       <Filter>File di origine</Filter>
@@ -151,6 +145,15 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="src\Camera.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PointLight.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SolidSphere.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Surface.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -257,9 +260,6 @@
     <ClInclude Include="src\ChiliMath.h">
       <Filter>File di intestazione\Geometry</Filter>
     </ClInclude>
-    <ClInclude Include="src\Melon.h">
-      <Filter>File di intestazione\Drawable</Filter>
-    </ClInclude>
     <ClInclude Include="src\Pyramid.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
@@ -311,6 +311,15 @@
     <ClInclude Include="src\Camera.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\PointLight.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SolidSphere.h">
+      <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidPS.hlsl">
+      <Filter>Shader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -335,12 +344,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="src\ColorIndexVS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="src\ColorIndexPS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
     <FxCompile Include="src\ColorBlendPS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
@@ -351,6 +354,15 @@
       <Filter>Shader</Filter>
     </FxCompile>
     <FxCompile Include="src\TextureVS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="src\PhongPS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="src\PhongVS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="SolidVS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
   </ItemGroup>
