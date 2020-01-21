@@ -193,7 +193,6 @@
     <ClCompile Include="src\PixelShader.cpp" />
     <ClCompile Include="src\Pyramid.cpp" />
     <ClCompile Include="src\Sampler.cpp" />
-    <ClCompile Include="src\Sheet.cpp" />
     <ClCompile Include="src\SkinnedBox.cpp" />
     <ClCompile Include="src\Surface.cpp" />
     <ClCompile Include="src\Texture.cpp" />
@@ -262,7 +261,6 @@
     <ClInclude Include="src\ChiliException.h" />
     <ClInclude Include="src\ChiliWin.h" />
     <ClInclude Include="src\Sampler.h" />
-    <ClInclude Include="src\Sheet.h" />
     <ClInclude Include="src\SkinnedBox.h" />
     <ClInclude Include="src\Sphere.h" />
     <ClInclude Include="src\Surface.h" />
