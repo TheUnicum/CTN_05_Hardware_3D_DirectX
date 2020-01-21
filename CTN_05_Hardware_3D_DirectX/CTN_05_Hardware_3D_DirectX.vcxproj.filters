@@ -311,6 +311,9 @@
     <ClInclude Include="src\SolidSphere.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
+    <ClInclude Include="src\TestObject.h">
+      <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
