@@ -326,6 +326,9 @@
     <ClInclude Include="src\AssTest.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
+    <ClInclude Include="src\VertexLayout.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">

@@ -141,6 +141,7 @@
     <ClInclude Include="src\AssTest.h" />
     <ClInclude Include="src\Cylinder.h" />
     <ClInclude Include="src\TestObject.h" />
+    <ClInclude Include="src\VertexLayout.h" />
     <FxCompile Include="BlendedPhongPS.hlsl">
       <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)%(Filename).cso</ObjectFileOutput>
       <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)%(Filename).cso</ObjectFileOutput>
