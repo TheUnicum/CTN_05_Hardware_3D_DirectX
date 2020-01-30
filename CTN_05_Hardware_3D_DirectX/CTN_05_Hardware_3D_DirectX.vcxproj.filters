@@ -156,6 +156,9 @@
     <ClCompile Include="src\Cylinder.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
+    <ClCompile Include="src\AssTest.cpp">
+      <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -318,6 +321,9 @@
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
     <ClInclude Include="src\Cylinder.h">
+      <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AssTest.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
   </ItemGroup>

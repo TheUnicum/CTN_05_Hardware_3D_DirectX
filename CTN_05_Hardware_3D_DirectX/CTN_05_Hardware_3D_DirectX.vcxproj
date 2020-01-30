@@ -97,6 +97,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AssTest.cpp" />
     <ClCompile Include="src\Cylinder.cpp" />
     <ClCompile Include="src\SolidSphere.cpp" />
     <ClCompile Include="src\PointLight.cpp" />
@@ -137,6 +138,7 @@
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\AssTest.h" />
     <ClInclude Include="src\Cylinder.h" />
     <ClInclude Include="src\TestObject.h" />
     <FxCompile Include="BlendedPhongPS.hlsl">
