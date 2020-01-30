@@ -11,5 +11,5 @@ bin-int/
 
 *.cso
 
-# .obj 3d model files unignore
-!Engine/models/*.obj
+*.obj
+!CTN_05_Hardware_3D_DirectX/src/Models/*.obj
