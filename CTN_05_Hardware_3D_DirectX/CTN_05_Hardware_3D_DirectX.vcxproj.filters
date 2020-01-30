@@ -99,12 +99,6 @@
     <ClCompile Include="src\Drawable.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
-    <ClCompile Include="src\Box.cpp">
-      <Filter>File di origine\Drawable</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Pyramid.cpp">
-      <Filter>File di origine\Drawable</Filter>
-    </ClCompile>
     <ClCompile Include="src\GDIPlusManager.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
@@ -113,9 +107,6 @@
     </ClCompile>
     <ClCompile Include="src\Sampler.cpp">
       <Filter>File di origine\Bindable</Filter>
-    </ClCompile>
-    <ClCompile Include="src\SkinnedBox.cpp">
-      <Filter>File di origine\Drawable</Filter>
     </ClCompile>
     <ClCompile Include="src\imgui\imgui.cpp">
       <Filter>File di origine\imgui</Filter>
@@ -147,17 +138,20 @@
     <ClCompile Include="src\PointLight.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\SolidSphere.cpp">
-      <Filter>File di origine\Bindable</Filter>
-    </ClCompile>
     <ClCompile Include="src\Surface.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\Cylinder.cpp">
-      <Filter>File di origine\Drawable</Filter>
-    </ClCompile>
     <ClCompile Include="src\AssTest.cpp">
       <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SolidSphere.cpp">
+      <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vertex.cpp">
+      <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -203,9 +197,6 @@
     <ClInclude Include="src\Bindable.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
-    <ClInclude Include="src\BindableBase.h">
-      <Filter>File di intestazione\Bindable</Filter>
-    </ClInclude>
     <ClInclude Include="src\ConstantBuffers.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
@@ -236,9 +227,6 @@
     <ClInclude Include="src\Drawable.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
-    <ClInclude Include="src\Box.h">
-      <Filter>File di intestazione\Drawable</Filter>
-    </ClInclude>
     <ClInclude Include="src\DrawableBase.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
@@ -263,9 +251,6 @@
     <ClInclude Include="src\ChiliMath.h">
       <Filter>File di intestazione\Geometry</Filter>
     </ClInclude>
-    <ClInclude Include="src\Pyramid.h">
-      <Filter>File di intestazione\Drawable</Filter>
-    </ClInclude>
     <ClInclude Include="src\Surface.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
@@ -277,9 +262,6 @@
     </ClInclude>
     <ClInclude Include="src\Sampler.h">
       <Filter>File di intestazione\Bindable</Filter>
-    </ClInclude>
-    <ClInclude Include="src\SkinnedBox.h">
-      <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
     <ClInclude Include="src\imgui\imconfig.h">
       <Filter>File di intestazione\imgui</Filter>
@@ -320,16 +302,22 @@
     <ClInclude Include="src\TestObject.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
-    <ClInclude Include="src\Cylinder.h">
-      <Filter>File di intestazione\Drawable</Filter>
-    </ClInclude>
     <ClInclude Include="src\AssTest.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
     <ClInclude Include="src\Vertex.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="src\Model.h">
+    <ClInclude Include="src\BindableCommon.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Color.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ConditionalNoexcept.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
@@ -356,18 +344,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="src\ColorBlendPS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="src\ColorBlendVS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="src\TexturePS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="src\TextureVS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
     <FxCompile Include="src\PhongPS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
@@ -378,20 +354,5 @@
       <Filter>Shader</Filter>
     </FxCompile>
     <FxCompile Include="SolidPS.hlsl" />
-    <FxCompile Include="IndexedPhongPS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="BlendedPhongVS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="BlendedPhongPS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="TexturedPhongVS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="TexturedPhongPS.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
   </ItemGroup>
 </Project>
