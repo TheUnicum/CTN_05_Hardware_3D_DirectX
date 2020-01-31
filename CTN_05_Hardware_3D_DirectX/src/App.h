@@ -25,5 +25,5 @@ private:
 	float speed_factor = 1.0f;
 	Camera cam;
 	PointLight light;
-	Model nano{ wnd.Gfx(),"src\\models\\nano_hierarchy.gltf" };
+	Model nano{ wnd.Gfx(),"src\\models\\nano_textured\\nanosuit.obj" };
 };
