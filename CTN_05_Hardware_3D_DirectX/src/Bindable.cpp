@@ -12,12 +12,12 @@ namespace Bind
 		return gfx.pDevice.Get();
 	}
 
-	DxgiInfoManager& Bindable::GetInfoManager(Graphics& gfx) noxnd
+	DxgiInfoManager& Bindable::GetInfoManager(Graphics& gfx)
 	{
-		#ifndef NDEBUG
+#ifndef NDEBUG
 		return gfx.infoManager;
-		#else
+#else
 		throw std::logic_error("YouFuckedUp! (tried to access gfx.infoManager in Release config)");
-		#endif
+#endif
 	}
 }
