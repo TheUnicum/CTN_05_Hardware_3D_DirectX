@@ -13,3 +13,4 @@ bin-int/
 
 *.obj
 !CTN_05_Hardware_3D_DirectX/src/Models/*.obj
+!CTN_05_Hardware_3D_DirectX/src/Models/**/*.obj
