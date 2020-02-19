@@ -135,6 +135,7 @@
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\BindableCodex.h" />
     <ClInclude Include="src\ConditionalNoexcept.h" />
     <ClInclude Include="src\Color.h" />
     <ClInclude Include="src\Mesh.h" />

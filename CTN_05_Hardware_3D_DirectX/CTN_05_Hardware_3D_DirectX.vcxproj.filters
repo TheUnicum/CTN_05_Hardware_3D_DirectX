@@ -296,6 +296,9 @@
     <ClInclude Include="src\Mesh.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\BindableCodex.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
