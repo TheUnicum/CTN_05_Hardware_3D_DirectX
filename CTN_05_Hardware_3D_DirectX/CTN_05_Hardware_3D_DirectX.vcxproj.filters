@@ -224,9 +224,6 @@
     <ClInclude Include="src\Drawable.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
-    <ClInclude Include="src\DrawableBase.h">
-      <Filter>File di intestazione\Drawable</Filter>
-    </ClInclude>
     <ClInclude Include="src\Sphere.h">
       <Filter>File di intestazione\Geometry</Filter>
     </ClInclude>
