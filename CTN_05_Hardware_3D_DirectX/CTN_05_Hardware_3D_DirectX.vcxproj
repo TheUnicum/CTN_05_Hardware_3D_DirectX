@@ -133,13 +133,16 @@
     <ClCompile Include="src\WinMain.cpp" />
     <ClCompile Include="src\WindowsMessageMap.cpp" />
     <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="src\TestPlane.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Plane.h" />
     <ClInclude Include="src\BindableCodex.h" />
     <ClInclude Include="src\ConditionalNoexcept.h" />
     <ClInclude Include="src\Color.h" />
     <ClInclude Include="src\Mesh.h" />
     <ClInclude Include="src\Vertex.h" />
+    <ClInclude Include="src\TestPlane.h" />
     <FxCompile Include="PhongPSSpecMap.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>

@@ -150,6 +150,9 @@
     <ClCompile Include="src\Vertex.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\TestPlane.cpp">
+      <Filter>File di origine\Drawable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -299,6 +302,12 @@
     <ClInclude Include="src\BindableCodex.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
+    <ClInclude Include="src\Plane.h">
+      <Filter>File di intestazione\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TestPlane.h">
+      <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -332,8 +341,10 @@
     <FxCompile Include="SolidVS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
-    <FxCompile Include="SolidPS.hlsl" />
     <FxCompile Include="PhongPSSpecMap.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="SolidPS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
   </ItemGroup>
