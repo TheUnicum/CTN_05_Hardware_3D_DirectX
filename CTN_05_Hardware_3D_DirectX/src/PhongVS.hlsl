@@ -1,4 +1,4 @@
-cbuffer CBuf
+   cbuffer CBuf
 {
 	matrix modelView;
 	matrix modelViewProj;
