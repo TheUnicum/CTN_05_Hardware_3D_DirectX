@@ -135,8 +135,10 @@
     <ClCompile Include="src\Window.cpp" />
     <ClCompile Include="src\TestPlane.cpp" />
     <ClCompile Include="src\TransformCbufDoubleboi.cpp" />
+    <ClCompile Include="src\TestCube.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Cube.h" />
     <ClInclude Include="src\Plane.h" />
     <ClInclude Include="src\BindableCodex.h" />
     <ClInclude Include="src\ConditionalNoexcept.h" />
@@ -145,6 +147,7 @@
     <ClInclude Include="src\Vertex.h" />
     <ClInclude Include="src\TestPlane.h" />
     <ClInclude Include="src\TransformCbufDoubleboi.h" />
+    <ClInclude Include="src\TestCube.h" />
     <FxCompile Include="PhongPSNormalMap.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
