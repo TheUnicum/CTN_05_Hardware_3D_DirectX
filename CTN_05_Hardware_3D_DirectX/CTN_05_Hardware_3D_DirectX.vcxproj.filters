@@ -153,6 +153,9 @@
     <ClCompile Include="src\TestPlane.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
+    <ClCompile Include="src\TransformCbufDoubleboi.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -307,6 +310,9 @@
     </ClInclude>
     <ClInclude Include="src\TestPlane.h">
       <Filter>File di intestazione\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformCbufDoubleboi.h">
+      <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
