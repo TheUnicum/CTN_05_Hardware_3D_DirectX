@@ -356,9 +356,6 @@
     <FxCompile Include="SolidVS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
-    <FxCompile Include="PhongPSSpecMap.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
     <FxCompile Include="SolidPS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
@@ -369,6 +366,15 @@
       <Filter>Shader</Filter>
     </FxCompile>
     <FxCompile Include="PhongPSNormalMapObject.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongPSSpecNormalMap.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongPSNotex.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="PhongVSNotex.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
   </ItemGroup>
