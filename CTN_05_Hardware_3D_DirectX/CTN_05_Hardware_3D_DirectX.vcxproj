@@ -192,6 +192,12 @@
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
     </FxCompile>
+    <None Include="ShaderOps.hlsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="PointLight.hlsl">
+      <FileType>Document</FileType>
+    </None>
     <FxCompile Include="SolidPS.hlsl">
       <FileType>CppHeader</FileType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
