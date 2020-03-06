@@ -323,6 +323,9 @@
     <ClInclude Include="src\TestCube.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
+    <ClInclude Include="src\NormalMapTwerker.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">

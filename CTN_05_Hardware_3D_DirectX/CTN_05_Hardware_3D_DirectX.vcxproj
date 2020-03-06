@@ -138,6 +138,7 @@
     <ClCompile Include="src\TestCube.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\NormalMapTwerker.h" />
     <ClInclude Include="src\Cube.h" />
     <ClInclude Include="src\Plane.h" />
     <ClInclude Include="src\BindableCodex.h" />
