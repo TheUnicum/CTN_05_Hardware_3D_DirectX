@@ -159,6 +159,9 @@
     <ClCompile Include="src\TestCube.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
+    <ClCompile Include="src\ChiliXM.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -324,6 +327,9 @@
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
     <ClInclude Include="src\NormalMapTwerker.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ChiliXM.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>

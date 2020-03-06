@@ -97,6 +97,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ChiliXM.cpp" />
     <ClCompile Include="src\Mesh.cpp" />
     <ClCompile Include="src\SolidSphere.cpp" />
     <ClCompile Include="src\PointLight.cpp" />
@@ -138,6 +139,7 @@
     <ClCompile Include="src\TestCube.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ChiliXM.h" />
     <ClInclude Include="src\NormalMapTwerker.h" />
     <ClInclude Include="src\Cube.h" />
     <ClInclude Include="src\Plane.h" />
