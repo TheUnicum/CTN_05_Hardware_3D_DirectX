@@ -162,6 +162,9 @@
     <ClCompile Include="src\ChiliXM.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\TexturePreprocessor.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -326,10 +329,10 @@
     <ClInclude Include="src\TestCube.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
-    <ClInclude Include="src\NormalMapTwerker.h">
+    <ClInclude Include="src\ChiliXM.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="src\ChiliXM.h">
+    <ClInclude Include="src\TexturePreprocessor.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>

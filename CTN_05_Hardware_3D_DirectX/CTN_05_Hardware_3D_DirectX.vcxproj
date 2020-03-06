@@ -137,10 +137,11 @@
     <ClCompile Include="src\TestPlane.cpp" />
     <ClCompile Include="src\TransformCbufDoubleboi.cpp" />
     <ClCompile Include="src\TestCube.cpp" />
+    <ClCompile Include="src\TexturePreprocessor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ChiliXM.h" />
-    <ClInclude Include="src\NormalMapTwerker.h" />
+    <ClInclude Include="src\TexturePreprocessor.h" />
     <ClInclude Include="src\Cube.h" />
     <ClInclude Include="src\Plane.h" />
     <ClInclude Include="src\BindableCodex.h" />
