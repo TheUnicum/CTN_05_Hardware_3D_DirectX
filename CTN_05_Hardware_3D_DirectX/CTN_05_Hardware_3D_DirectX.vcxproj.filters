@@ -348,6 +348,10 @@
     <None Include="src\DXTrace.inl">
       <Filter>File di intestazione</Filter>
     </None>
+    <None Include="Transform.hlsl" />
+    <None Include="LightVectorData.hlsl" />
+    <None Include="ShaderOps.hlsl" />
+    <None Include="PointLight.hlsl" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="src\PhongPS.hlsl">
@@ -380,16 +384,7 @@
     <FxCompile Include="PhongVSNotex.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
-    <FxCompile Include="ShaderOps.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="PointLight.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="LightVectorData.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
-    <FxCompile Include="Transform.hlsl">
+    <FxCompile Include="PhongPSSpec.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
   </ItemGroup>
