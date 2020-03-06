@@ -27,7 +27,7 @@ private:
 	Camera cam;
 	PointLight light;
 	Model gobber{ wnd.Gfx(),"src\\models\\gobber\\GoblinX.obj" };
-	//Model wall{ wnd.Gfx(),"src\\models\\brick_wall\\brick_wall.obj" };
-	//TestPlane tp{ wnd.Gfx(),1.0 };;
-	//Model nano{ wnd.Gfx(),"src\\models\\nano_textured\\nanosuit.obj" };
+	Model wall{ wnd.Gfx(),"src\\models\\brick_wall\\brick_wall.obj" };
+	TestPlane tp{ wnd.Gfx(),1.0 };
+	Model nano{ wnd.Gfx(),"src\\models\\nano_textured\\nanosuit.obj" };
 };
