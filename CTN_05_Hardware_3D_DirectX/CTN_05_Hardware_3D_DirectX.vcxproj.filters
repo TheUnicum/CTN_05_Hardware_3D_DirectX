@@ -99,9 +99,6 @@
     <ClCompile Include="src\Drawable.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
-    <ClCompile Include="src\GDIPlusManager.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
     <ClCompile Include="src\Texture.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
@@ -255,9 +252,6 @@
       <Filter>File di intestazione\Geometry</Filter>
     </ClInclude>
     <ClInclude Include="src\Surface.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="src\GDIPlusManager.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="src\Texture.h">
