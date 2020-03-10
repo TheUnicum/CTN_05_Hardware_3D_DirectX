@@ -332,4 +332,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties src_4process_1json__JsonSchema="[T" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
