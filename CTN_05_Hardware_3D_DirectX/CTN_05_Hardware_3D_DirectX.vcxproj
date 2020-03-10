@@ -97,6 +97,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Rasterizer.cpp" />
     <ClCompile Include="src\Blender.cpp" />
     <ClCompile Include="src\ChiliXM.cpp" />
     <ClCompile Include="src\Mesh.cpp" />
@@ -141,6 +142,7 @@
     <ClCompile Include="src\TexturePreprocessor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Rasterizer.h" />
     <ClInclude Include="src\Blender.h" />
     <ClInclude Include="src\ChiliXM.h" />
     <ClInclude Include="src\TexturePreprocessor.h" />
