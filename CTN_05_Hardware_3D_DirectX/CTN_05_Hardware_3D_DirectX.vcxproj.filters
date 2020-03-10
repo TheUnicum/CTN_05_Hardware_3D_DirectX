@@ -168,6 +168,9 @@
     <ClCompile Include="src\Rasterizer.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
+    <ClCompile Include="src\ChiliUtil.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -340,6 +343,9 @@
     </ClInclude>
     <ClInclude Include="src\Rasterizer.h">
       <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ChiliUtil.h">
+      <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
