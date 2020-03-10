@@ -28,6 +28,7 @@ private:
 	Camera cam;
 	PointLight light;
 	Model sponza{ wnd.Gfx(),"src\\models\\sponza\\sponza.obj",1.0f / 20.0f };
+	TestPlane bluePlane{ wnd.Gfx(),6.0f,{ 0.3f,0.3f,1.0f,0.0f } };
 	//Model gobber{ wnd.Gfx(),"src\\models\\gobber\\GoblinX.obj",6.0f };
 	//Model wall{ wnd.Gfx(),"src\\models\\brick_wall\\brick_wall.obj",6.0f };
 	//TestPlane tp{ wnd.Gfx(),6.0 };
