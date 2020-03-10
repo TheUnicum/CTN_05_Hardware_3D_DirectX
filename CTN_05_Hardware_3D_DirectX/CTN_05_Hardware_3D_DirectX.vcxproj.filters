@@ -171,6 +171,9 @@
     <ClCompile Include="src\ChiliUtil.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\ScriptCommander.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -347,6 +350,12 @@
     <ClInclude Include="src\ChiliUtil.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\ScriptCommander.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\json.hpp">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -373,6 +382,7 @@
     <None Include="LightVectorData.hlsl" />
     <None Include="ShaderOps.hlsl" />
     <None Include="PointLight.hlsl" />
+    <None Include="src\process.json" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="PhongPSNormalMap.hlsl">

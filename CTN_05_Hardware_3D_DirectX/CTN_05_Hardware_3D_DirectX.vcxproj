@@ -97,6 +97,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ScriptCommander.cpp" />
     <ClCompile Include="src\ChiliUtil.cpp" />
     <ClCompile Include="src\Rasterizer.cpp" />
     <ClCompile Include="src\Blender.cpp" />
@@ -142,6 +143,8 @@
     <ClCompile Include="src\TexturePreprocessor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\json.hpp" />
+    <ClInclude Include="src\ScriptCommander.h" />
     <ClInclude Include="src\ChiliUtil.h" />
     <ClInclude Include="src\Rasterizer.h" />
     <ClInclude Include="src\Blender.h" />
@@ -157,6 +160,7 @@
     <ClInclude Include="src\TestPlane.h" />
     <ClInclude Include="src\TransformCbufDoubleboi.h" />
     <ClInclude Include="src\TestCube.h" />
+    <None Include="src\process.json" />
     <None Include="Transform.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
