@@ -177,6 +177,9 @@
     <ClCompile Include="src\DynamicConstant.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\LayoutCodex.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">

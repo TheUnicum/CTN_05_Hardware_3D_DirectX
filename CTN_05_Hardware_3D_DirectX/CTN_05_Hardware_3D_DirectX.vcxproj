@@ -98,6 +98,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\DynamicConstant.cpp" />
+    <ClCompile Include="src\LayoutCodex.cpp" />
     <ClCompile Include="src\ScriptCommander.cpp" />
     <ClCompile Include="src\ChiliUtil.cpp" />
     <ClCompile Include="src\Rasterizer.cpp" />
