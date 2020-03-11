@@ -377,6 +377,9 @@
     <ClInclude Include="src\Testing.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\Stencil.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
