@@ -143,6 +143,7 @@
     <ClCompile Include="src\TransformCbufDoubleboi.cpp" />
     <ClCompile Include="src\TestCube.cpp" />
     <ClCompile Include="src\TexturePreprocessor.cpp" />
+    <ClCompile Include="src\Testing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\LayoutCodex.h" />
@@ -165,6 +166,7 @@
     <ClInclude Include="src\TestPlane.h" />
     <ClInclude Include="src\TransformCbufDoubleboi.h" />
     <ClInclude Include="src\TestCube.h" />
+    <ClInclude Include="src\Testing.h" />
     <None Include="src\process.json" />
     <None Include="Transform.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>

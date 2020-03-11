@@ -180,6 +180,9 @@
     <ClCompile Include="src\LayoutCodex.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\Testing.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -369,6 +372,9 @@
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
     <ClInclude Include="src\LayoutCodex.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Testing.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
