@@ -356,6 +356,9 @@
     <ClInclude Include="src\json.hpp">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\DynamicConstant.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">

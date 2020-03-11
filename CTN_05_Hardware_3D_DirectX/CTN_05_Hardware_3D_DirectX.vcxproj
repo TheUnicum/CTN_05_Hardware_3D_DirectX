@@ -143,6 +143,7 @@
     <ClCompile Include="src\TexturePreprocessor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\DynamicConstant.h" />
     <ClInclude Include="src\json.hpp" />
     <ClInclude Include="src\ScriptCommander.h" />
     <ClInclude Include="src\ChiliUtil.h" />
