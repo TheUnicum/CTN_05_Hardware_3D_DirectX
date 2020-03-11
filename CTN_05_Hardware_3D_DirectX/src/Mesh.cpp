@@ -7,6 +7,7 @@
 #include "ChiliXM.h"
 #include "DynamicConstant.h"
 #include "ConstantBuffersEx.h"
+#include "LayoutCodex.h"
 
 namespace dx = DirectX;
 
@@ -432,70 +433,85 @@ std::unique_ptr<Mesh> Model::ParseMesh(Graphics& gfx, const aiMesh& mesh, const 
 		bindablePtrs.push_back(InputLayout::Resolve(gfx, vbuf.GetLayout(), pvsbc));
 
 		Dcb::Layout layout;
-		layout.Add<Dcb::Float>("specularIntensity");
-		layout.Add<Dcb::Float>("specularPower");
-		layout.Add<Dcb::Bool>("normalMapEnabled");
+		bool loaded = false;
+		auto tag = "diff&nrm";
+		if (LayoutCodex::Has(tag))
+		{
+			layout = LayoutCodex::Load(tag);
+			loaded = true;
+		}
+		else
+		{
+			layout.Add<Dcb::Float>("specularIntensity");
+			layout.Add<Dcb::Float>("specularPower");
+			layout.Add<Dcb::Bool>("normalMapEnabled");
+		}
 
 		Dcb::Buffer cbuf{ layout };
 		cbuf["specularIntensity"] = (specularColor.x + specularColor.y + specularColor.z) / 3.0f;
 		cbuf["specularPower"] = shininess;
 		cbuf["normalMapEnabled"] = TRUE;
 		bindablePtrs.push_back(std::make_shared<PixelConstantBufferEX>(gfx, cbuf, 1u));
+
+		if (!loaded)
+		{
+			LayoutCodex::Store(tag, layout);
+		}
 	}
 	else if (hasDiffuseMap && !hasNormalMap && hasSpecularMap)
 	{
-	Dvtx::VertexBuffer vbuf(std::move(
-		VertexLayout{}
-		.Append(VertexLayout::Position3D)
-		.Append(VertexLayout::Normal)
-		.Append(VertexLayout::Texture2D)
-	));
+		Dvtx::VertexBuffer vbuf(std::move(
+			VertexLayout{}
+			.Append(VertexLayout::Position3D)
+			.Append(VertexLayout::Normal)
+			.Append(VertexLayout::Texture2D)
+		));
 
-	for (unsigned int i = 0; i < mesh.mNumVertices; i++)
-	{
-		vbuf.EmplaceBack(
-			dx::XMFLOAT3(mesh.mVertices[i].x * scale, mesh.mVertices[i].y * scale, mesh.mVertices[i].z * scale),
-			*reinterpret_cast<dx::XMFLOAT3*>(&mesh.mNormals[i]),
-			*reinterpret_cast<dx::XMFLOAT2*>(&mesh.mTextureCoords[0][i])
-		);
-	}
+		for (unsigned int i = 0; i < mesh.mNumVertices; i++)
+		{
+			vbuf.EmplaceBack(
+				dx::XMFLOAT3(mesh.mVertices[i].x * scale, mesh.mVertices[i].y * scale, mesh.mVertices[i].z * scale),
+				*reinterpret_cast<dx::XMFLOAT3*>(&mesh.mNormals[i]),
+				*reinterpret_cast<dx::XMFLOAT2*>(&mesh.mTextureCoords[0][i])
+			);
+		}
 
-	std::vector<unsigned short> indices;
-	indices.reserve(mesh.mNumFaces * 3);
-	for (unsigned int i = 0; i < mesh.mNumFaces; i++)
-	{
-		const auto& face = mesh.mFaces[i];
-		assert(face.mNumIndices == 3);
-		indices.push_back(face.mIndices[0]);
-		indices.push_back(face.mIndices[1]);
-		indices.push_back(face.mIndices[2]);
-	}
+		std::vector<unsigned short> indices;
+		indices.reserve(mesh.mNumFaces * 3);
+		for (unsigned int i = 0; i < mesh.mNumFaces; i++)
+		{
+			const auto& face = mesh.mFaces[i];
+			assert(face.mNumIndices == 3);
+			indices.push_back(face.mIndices[0]);
+			indices.push_back(face.mIndices[1]);
+			indices.push_back(face.mIndices[2]);
+		}
 
-	bindablePtrs.push_back(VertexBuffer::Resolve(gfx, meshTag, vbuf));
+		bindablePtrs.push_back(VertexBuffer::Resolve(gfx, meshTag, vbuf));
 
-	bindablePtrs.push_back(IndexBuffer::Resolve(gfx, meshTag, indices));
+		bindablePtrs.push_back(IndexBuffer::Resolve(gfx, meshTag, indices));
 
-	auto pvs = VertexShader::Resolve(gfx, "PhongVS.cso");
-	auto pvsbc = pvs->GetBytecode();
-	bindablePtrs.push_back(std::move(pvs));
+		auto pvs = VertexShader::Resolve(gfx, "PhongVS.cso");
+		auto pvsbc = pvs->GetBytecode();
+		bindablePtrs.push_back(std::move(pvs));
 
-	bindablePtrs.push_back(PixelShader::Resolve(gfx, "PhongPSSpec.cso"));
+		bindablePtrs.push_back(PixelShader::Resolve(gfx, "PhongPSSpec.cso"));
 
-	bindablePtrs.push_back(InputLayout::Resolve(gfx, vbuf.GetLayout(), pvsbc));
+		bindablePtrs.push_back(InputLayout::Resolve(gfx, vbuf.GetLayout(), pvsbc));
 
-	struct PSMaterialConstantDiffuseSpec
-	{
-		float specularPowerConst;
-		BOOL hasGloss;
-		float specularMapWeight;
-		float padding;
-	} pmc;
-	pmc.specularPowerConst = shininess;
-	pmc.hasGloss = hasAlphaGloss ? TRUE : FALSE;
-	pmc.specularMapWeight = 1.0f;
-	// this is CLEARLY an issue... all meshes will share same mat const, but may have different
-	// Ns (specular power) specified for each in the material properties... bad conflict
-	bindablePtrs.push_back(PixelConstantBuffer<PSMaterialConstantDiffuseSpec>::Resolve(gfx, pmc, 1u));
+		struct PSMaterialConstantDiffuseSpec
+		{
+			float specularPowerConst;
+			BOOL hasGloss;
+			float specularMapWeight;
+			float padding;
+		} pmc;
+		pmc.specularPowerConst = shininess;
+		pmc.hasGloss = hasAlphaGloss ? TRUE : FALSE;
+		pmc.specularMapWeight = 1.0f;
+		// this is CLEARLY an issue... all meshes will share same mat const, but may have different
+		// Ns (specular power) specified for each in the material properties... bad conflict
+		bindablePtrs.push_back(PixelConstantBuffer<PSMaterialConstantDiffuseSpec>::Resolve(gfx, pmc, 1u));
 	}
 	else if (hasDiffuseMap)
 	{

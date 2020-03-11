@@ -362,6 +362,9 @@
     <ClInclude Include="src\ConstantBuffersEx.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
+    <ClInclude Include="src\LayoutCodex.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
