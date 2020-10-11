@@ -179,6 +179,7 @@
     <ClInclude Include="src\Stencil.h" />
     <ClInclude Include="src\Step.h" />
     <ClInclude Include="src\Technique.h" />
+    <ClInclude Include="src\TechniqueProbe.h" />
     <None Include="src\process.json" />
     <None Include="Transform.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
