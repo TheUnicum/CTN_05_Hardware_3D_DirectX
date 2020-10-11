@@ -150,6 +150,7 @@
     <ClCompile Include="src\Technique.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Material.h" />
     <ClInclude Include="src\PerfLog.h" />
     <ClInclude Include="src\NullPixelShader.h" />
     <ClInclude Include="src\FrameCommander.h" />

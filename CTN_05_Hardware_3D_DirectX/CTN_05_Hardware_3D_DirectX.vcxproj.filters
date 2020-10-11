@@ -46,6 +46,12 @@
     <Filter Include="File di origine\Jobber">
       <UniqueIdentifier>{1f1b66f3-3915-43cb-a8da-3b79335ec031}</UniqueIdentifier>
     </Filter>
+    <Filter Include="File di intestazione\Model">
+      <UniqueIdentifier>{09b08382-4572-4c77-8a63-0d224d95476e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\Model">
+      <UniqueIdentifier>{16152dc8-85ae-48f8-a414-5db981e713f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -147,9 +153,6 @@
     <ClCompile Include="src\SolidSphere.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
-    <ClCompile Include="src\Mesh.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
     <ClCompile Include="src\Vertex.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
@@ -200,6 +203,9 @@
     </ClCompile>
     <ClCompile Include="src\NullPixelShader.cpp">
       <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>File di origine\Model</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -341,9 +347,6 @@
     <ClInclude Include="src\ConditionalNoexcept.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="src\Mesh.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
     <ClInclude Include="src\BindableCodex.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
@@ -421,6 +424,12 @@
     </ClInclude>
     <ClInclude Include="src\TechniqueProbe.h">
       <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Material.h">
+      <Filter>File di intestazione\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.h">
+      <Filter>File di intestazione\Model</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
