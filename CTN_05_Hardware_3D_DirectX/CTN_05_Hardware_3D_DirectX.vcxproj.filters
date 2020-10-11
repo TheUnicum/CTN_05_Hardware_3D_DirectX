@@ -416,6 +416,9 @@
     <ClInclude Include="src\NullPixelShader.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\PerfLog.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
