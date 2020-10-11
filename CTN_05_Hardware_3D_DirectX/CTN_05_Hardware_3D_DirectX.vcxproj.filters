@@ -210,6 +210,18 @@
     <ClCompile Include="src\Material.cpp">
       <Filter>File di origine\Model</Filter>
     </ClCompile>
+    <ClCompile Include="src\Node.cpp">
+      <Filter>File di origine\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ModelWindow.cpp">
+      <Filter>File di origine\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ModelException.cpp">
+      <Filter>File di origine\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model.cpp">
+      <Filter>File di origine\Model</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -432,6 +444,18 @@
       <Filter>File di intestazione\Model</Filter>
     </ClInclude>
     <ClInclude Include="src\Mesh.h">
+      <Filter>File di intestazione\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Node.h">
+      <Filter>File di intestazione\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ModelWindow.h">
+      <Filter>File di intestazione\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ModelException.h">
+      <Filter>File di intestazione\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Model.h">
       <Filter>File di intestazione\Model</Filter>
     </ClInclude>
   </ItemGroup>
