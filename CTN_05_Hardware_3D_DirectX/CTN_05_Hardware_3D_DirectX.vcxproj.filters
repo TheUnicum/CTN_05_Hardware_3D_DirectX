@@ -40,6 +40,12 @@
     <Filter Include="File di origine\imgui">
       <UniqueIdentifier>{4ec2c7b9-ec01-45c5-a043-acc8d7b1d5e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="File di intestazione\Jobber">
+      <UniqueIdentifier>{cc27def3-6422-428e-8962-3338c23b2b5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\Jobber">
+      <UniqueIdentifier>{1f1b66f3-3915-43cb-a8da-3b79335ec031}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -181,6 +187,18 @@
       <Filter>File di origine</Filter>
     </ClCompile>
     <ClCompile Include="src\Testing.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Step.cpp">
+      <Filter>File di origine\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Technique.cpp">
+      <Filter>File di origine\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Job.cpp">
+      <Filter>File di origine\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NullPixelShader.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -379,6 +397,24 @@
     </ClInclude>
     <ClInclude Include="src\Stencil.h">
       <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Step.h">
+      <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Technique.h">
+      <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FrameCommander.h">
+      <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Job.h">
+      <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pass.h">
+      <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NullPixelShader.h">
+      <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
