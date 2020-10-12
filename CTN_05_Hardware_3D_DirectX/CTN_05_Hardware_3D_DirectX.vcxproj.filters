@@ -213,9 +213,6 @@
     <ClCompile Include="src\Node.cpp">
       <Filter>File di origine\Model</Filter>
     </ClCompile>
-    <ClCompile Include="src\ModelWindow.cpp">
-      <Filter>File di origine\Model</Filter>
-    </ClCompile>
     <ClCompile Include="src\ModelException.cpp">
       <Filter>File di origine\Model</Filter>
     </ClCompile>
@@ -447,9 +444,6 @@
       <Filter>File di intestazione\Model</Filter>
     </ClInclude>
     <ClInclude Include="src\Node.h">
-      <Filter>File di intestazione\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="src\ModelWindow.h">
       <Filter>File di intestazione\Model</Filter>
     </ClInclude>
     <ClInclude Include="src\ModelException.h">
