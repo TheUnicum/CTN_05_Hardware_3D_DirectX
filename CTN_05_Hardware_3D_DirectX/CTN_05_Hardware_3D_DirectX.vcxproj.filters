@@ -514,5 +514,7 @@
     </FxCompile>
     <FxCompile Include="PhongDifMskSpcNrm_VS.hlsl" />
     <FxCompile Include="PhongDifMskSpcNrm_PS.hlsl" />
+    <FxCompile Include="PhongDif_VS.hlsl" />
+    <FxCompile Include="PhongDif_PS.hlsl" />
   </ItemGroup>
 </Project>
