@@ -155,6 +155,7 @@
     <ClCompile Include="src\Technique.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ModelProbe.h" />
     <ClInclude Include="src\Model.h" />
     <ClInclude Include="src\ModelException.h" />
     <ClInclude Include="src\ModelWindow.h" />
