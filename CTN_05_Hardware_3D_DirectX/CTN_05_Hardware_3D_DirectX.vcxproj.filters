@@ -521,5 +521,6 @@
     <FxCompile Include="PhongDif_PS.hlsl" />
     <FxCompile Include="PhongPS.hlsl" />
     <FxCompile Include="PhongVS.hlsl" />
+    <FxCompile Include="Offset_VS.hlsl" />
   </ItemGroup>
 </Project>
