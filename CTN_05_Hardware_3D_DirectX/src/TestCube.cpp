@@ -28,11 +28,11 @@ TestCube::TestCube(Graphics& gfx, float size)
 			only.AddBindable(Texture::Resolve(gfx, "src\\Images\\brickwall.jpg"));
 			only.AddBindable(Sampler::Resolve(gfx));
 
-			auto pvs = VertexShader::Resolve(gfx, "Phong_VS.cso");
+			auto pvs = VertexShader::Resolve(gfx, "PhongVS.cso"); // IMPORTAT: this is the old shader!!
 			auto pvsbc = pvs->GetBytecode();
 			only.AddBindable(std::move(pvs));
 
-			only.AddBindable(PixelShader::Resolve(gfx, "Phong_PS.cso"));
+			only.AddBindable(PixelShader::Resolve(gfx, "PhongPS.cso"));// IMPORTAT: this is the old shader!!
 
 			Dcb::RawLayout lay;
 			lay.Add<Dcb::Float>("specularIntensity");
