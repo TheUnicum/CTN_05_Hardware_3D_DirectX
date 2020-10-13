@@ -531,5 +531,7 @@
     <FxCompile Include="PhongPS.hlsl" />
     <FxCompile Include="PhongVS.hlsl" />
     <FxCompile Include="Offset_VS.hlsl" />
+    <FxCompile Include="Fullscreen_VS.hlsl" />
+    <FxCompile Include="Funk_PS.hlsl" />
   </ItemGroup>
 </Project>
