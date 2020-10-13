@@ -97,6 +97,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\DepthStencil.cpp" />
+    <ClCompile Include="src\GraphicsResource.cpp" />
+    <ClCompile Include="src\RenderTarget.cpp" />
     <ClCompile Include="src\Model.cpp" />
     <ClCompile Include="src\ModelException.cpp" />
     <ClCompile Include="src\Node.cpp" />
@@ -113,7 +116,6 @@
     <ClCompile Include="src\Mesh.cpp" />
     <ClCompile Include="src\SolidSphere.cpp" />
     <ClCompile Include="src\PointLight.cpp" />
-    <ClCompile Include="src\Bindable.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\Drawable.cpp" />
     <ClCompile Include="src\DxgiInfoManager.cpp" />
@@ -154,6 +156,9 @@
     <ClCompile Include="src\Technique.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\DepthStencil.h" />
+    <ClInclude Include="src\GraphicsResource.h" />
+    <ClInclude Include="src\RenderTarget.h" />
     <ClInclude Include="src\ModelProbe.h" />
     <ClInclude Include="src\Model.h" />
     <ClInclude Include="src\ModelException.h" />

@@ -84,9 +84,6 @@
     <ClCompile Include="src\DxgiInfoManager.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\Bindable.cpp">
-      <Filter>File di origine\Bindable</Filter>
-    </ClCompile>
     <ClCompile Include="src\InputLayout.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
@@ -218,6 +215,15 @@
     </ClCompile>
     <ClCompile Include="src\Model.cpp">
       <Filter>File di origine\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderTarget.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DepthStencil.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GraphicsResource.cpp">
+      <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -454,6 +460,15 @@
     </ClInclude>
     <ClInclude Include="src\ModelProbe.h">
       <Filter>File di intestazione\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderTarget.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GraphicsResource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DepthStencil.h">
+      <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
