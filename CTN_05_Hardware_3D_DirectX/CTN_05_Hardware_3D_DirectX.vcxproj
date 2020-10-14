@@ -102,8 +102,7 @@
     <ClCompile Include="src\RenderQueuePass.cpp" />
     <ClCompile Include="src\RenderGraphCompileException.cpp" />
     <ClCompile Include="src\RenderGraph.cpp" />
-    <ClCompile Include="src\PassOutput.cpp" />
-    <ClCompile Include="src\PassInput.cpp" />
+    <ClCompile Include="src\Sink.cpp" />
     <ClCompile Include="src\FullscreenPass.cpp" />
     <ClCompile Include="src\BufferClearPass.cpp" />
     <ClCompile Include="src\BindingPass.cpp" />
@@ -148,6 +147,7 @@
     <ClCompile Include="src\ChiliException.cpp" />
     <ClCompile Include="src\PixelShader.cpp" />
     <ClCompile Include="src\Sampler.cpp" />
+    <ClCompile Include="src\Source.cpp" />
     <ClCompile Include="src\Surface.cpp" />
     <ClCompile Include="src\Texture.cpp" />
     <ClCompile Include="src\Topology.cpp" />
@@ -170,6 +170,7 @@
     <ClCompile Include="src\VerticalBlurPass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Source.h" />
     <ClInclude Include="src\BlurOutlineDrawingPass.h" />
     <ClInclude Include="src\BlurOutlineRenderGraph.h" />
     <ClInclude Include="src\HorizontalBlurPass.h" />
@@ -179,8 +180,7 @@
     <ClInclude Include="src\RenderQueuePass.h" />
     <ClInclude Include="src\RenderGraphCompileException.h" />
     <ClInclude Include="src\RenderGraph.h" />
-    <ClInclude Include="src\PassOutput.h" />
-    <ClInclude Include="src\PassInput.h" />
+    <ClInclude Include="src\Sink.h" />
     <ClInclude Include="src\LambertianPass.h" />
     <ClInclude Include="src\FullscreenPass.h" />
     <ClInclude Include="src\BufferResource.h" />

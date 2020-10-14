@@ -58,6 +58,12 @@
     <Filter Include="File di intestazione\Jobber\Passlib">
       <UniqueIdentifier>{ed83383c-35f3-45ea-831e-fbb752c86b2a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="File di intestazione\Jobber\Passlib\Base">
+      <UniqueIdentifier>{d7354835-5b39-4bc9-92bc-e81535dda036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\Jobber\Passlib\Base">
+      <UniqueIdentifier>{6c55211e-eaf7-4dd2-b97e-2137d7522dd1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -231,12 +237,6 @@
     <ClCompile Include="src\RenderGraphCompileException.cpp">
       <Filter>File di origine\Jobber\Passlib</Filter>
     </ClCompile>
-    <ClCompile Include="src\PassOutput.cpp">
-      <Filter>File di origine\Jobber\Passlib</Filter>
-    </ClCompile>
-    <ClCompile Include="src\PassInput.cpp">
-      <Filter>File di origine\Jobber\Passlib</Filter>
-    </ClCompile>
     <ClCompile Include="src\StepLinkingProbe.cpp">
       <Filter>File di origine\Jobber</Filter>
     </ClCompile>
@@ -272,6 +272,12 @@
     </ClCompile>
     <ClCompile Include="src\NullPixelShader.cpp">
       <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sink.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source.cpp">
+      <Filter>File di origine\Jobber\Passlib\Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -506,19 +512,10 @@
     <ClInclude Include="src\BufferResource.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="src\LambertianPass.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
     <ClInclude Include="src\BindingPass.h">
       <Filter>File di intestazione\Jobber\Passlib</Filter>
     </ClInclude>
     <ClInclude Include="src\FullscreenPass.h">
-      <Filter>File di intestazione\Jobber\Passlib</Filter>
-    </ClInclude>
-    <ClInclude Include="src\PassInput.h">
-      <Filter>File di intestazione\Jobber\Passlib</Filter>
-    </ClInclude>
-    <ClInclude Include="src\PassOutput.h">
       <Filter>File di intestazione\Jobber\Passlib</Filter>
     </ClInclude>
     <ClInclude Include="src\RenderGraphCompileException.h">
@@ -571,6 +568,15 @@
     </ClInclude>
     <ClInclude Include="src\NullPixelShader.h">
       <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source.h">
+      <Filter>File di intestazione\Jobber\Passlib\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LambertianPass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sink.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
