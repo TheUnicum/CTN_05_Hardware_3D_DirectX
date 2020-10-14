@@ -545,6 +545,9 @@
     <ClInclude Include="src\TransformCbufScaling.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
+    <ClInclude Include="src\TestModelProbe.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
