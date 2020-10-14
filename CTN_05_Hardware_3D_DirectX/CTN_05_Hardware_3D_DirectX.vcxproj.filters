@@ -258,6 +258,9 @@
     <ClCompile Include="src\RenderGraph.cpp">
       <Filter>File di origine\Jobber</Filter>
     </ClCompile>
+    <ClCompile Include="src\TransformCbufScaling.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -538,6 +541,9 @@
     </ClInclude>
     <ClInclude Include="src\OutlineMaskGenerationPass.h">
       <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TransformCbufScaling.h">
+      <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
