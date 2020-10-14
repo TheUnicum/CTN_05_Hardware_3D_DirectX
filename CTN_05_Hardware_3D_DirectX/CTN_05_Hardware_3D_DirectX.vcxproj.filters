@@ -470,6 +470,9 @@
     <ClInclude Include="src\DepthStencil.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\BlurPack.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -533,5 +536,6 @@
     <FxCompile Include="Offset_VS.hlsl" />
     <FxCompile Include="Fullscreen_VS.hlsl" />
     <FxCompile Include="Blur_PS.hlsl" />
+    <FxCompile Include="BlurOutline_PS.hlsl" />
   </ItemGroup>
 </Project>
