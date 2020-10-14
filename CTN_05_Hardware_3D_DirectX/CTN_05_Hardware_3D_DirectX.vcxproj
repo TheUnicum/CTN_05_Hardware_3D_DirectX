@@ -97,6 +97,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\BlurOutlineRenderGraph.cpp" />
+    <ClCompile Include="src\HorizontalBlurPass.cpp" />
     <ClCompile Include="src\RenderQueuePass.cpp" />
     <ClCompile Include="src\RenderGraphCompileException.cpp" />
     <ClCompile Include="src\RenderGraph.cpp" />
@@ -164,9 +166,14 @@
     <ClCompile Include="src\Technique.cpp" />
     <ClCompile Include="src\StepLinkingProbe.cpp" />
     <ClCompile Include="src\TransformCbufScaling.cpp" />
-    <ClCompile Include="src\TestRenderGraph.cpp" />
+    <ClCompile Include="src\ScaleOutlineRenderGraph.cpp" />
+    <ClCompile Include="src\VerticalBlurPass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\BlurOutlineDrawingPass.h" />
+    <ClInclude Include="src\BlurOutlineRenderGraph.h" />
+    <ClInclude Include="src\HorizontalBlurPass.h" />
+    <ClInclude Include="src\ScaleOutlineRenderGraph.h" />
     <ClInclude Include="src\OutlineDrawingPass.h" />
     <ClInclude Include="src\OutlineMaskGenerationPass.h" />
     <ClInclude Include="src\RenderQueuePass.h" />
@@ -219,7 +226,7 @@
     <ClInclude Include="src\StepLinkingProbe.h" />
     <ClInclude Include="src\TransformCbufScaling.h" />
     <ClInclude Include="src\TestModelProbe.h" />
-    <ClInclude Include="src\TestRenderGraph.h" />
+    <ClInclude Include="src\VerticalBlurPass.h" />
     <None Include="src\process.json" />
     <None Include="Transform.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>

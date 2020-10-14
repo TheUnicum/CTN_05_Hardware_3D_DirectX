@@ -261,7 +261,16 @@
     <ClCompile Include="src\TransformCbufScaling.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
-    <ClCompile Include="src\TestRenderGraph.cpp">
+    <ClCompile Include="src\VerticalBlurPass.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScaleOutlineRenderGraph.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HorizontalBlurPass.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BlurOutlineRenderGraph.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -551,8 +560,20 @@
     <ClInclude Include="src\TestModelProbe.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="src\TestRenderGraph.h">
+    <ClInclude Include="src\VerticalBlurPass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScaleOutlineRenderGraph.h">
       <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HorizontalBlurPass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BlurOutlineRenderGraph.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BlurOutlineDrawingPass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
