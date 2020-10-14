@@ -201,9 +201,6 @@
     <ClCompile Include="src\Job.cpp">
       <Filter>File di origine\Jobber</Filter>
     </ClCompile>
-    <ClCompile Include="src\NullPixelShader.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
     <ClCompile Include="src\Mesh.cpp">
       <Filter>File di origine\Model</Filter>
     </ClCompile>
@@ -272,6 +269,9 @@
     </ClCompile>
     <ClCompile Include="src\BlurOutlineRenderGraph.cpp">
       <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NullPixelShader.cpp">
+      <Filter>File di origine\Bindable</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -473,9 +473,6 @@
     <ClInclude Include="src\Job.h">
       <Filter>File di intestazione\Jobber</Filter>
     </ClInclude>
-    <ClInclude Include="src\NullPixelShader.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
     <ClInclude Include="src\PerfLog.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
@@ -574,6 +571,9 @@
     </ClInclude>
     <ClInclude Include="src\BlurOutlineDrawingPass.h">
       <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NullPixelShader.h">
+      <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
