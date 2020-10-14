@@ -4,10 +4,12 @@
 #include <d3dcompiler.h>
 #include <cmath>
 #include <DirectXMath.h>
+#include <array>
 #include "GraphicsThrowMacros.h"
 #include "imgui/imgui_impl_dx11.h"
 #include "imgui/imgui_impl_win32.h"
 #include "DepthStencil.h"
+#include "RenderTarget.h"
 
 namespace wrl = Microsoft::WRL;
 namespace dx = DirectX;
@@ -33,15 +35,15 @@ Graphics::Graphics(HWND hWnd, int width, int height)
 	sd.SampleDesc.Quality = 0;
 	sd.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
 	sd.BufferCount = 1;
-	sd.OutputWindow = hWnd; //(HWND)696969;//
+	sd.OutputWindow = hWnd;
 	sd.Windowed = TRUE;
 	sd.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
 	sd.Flags = 0;
 
 	UINT swapCreateFlags = 0u;
-#ifndef NDEBUG
+	#ifndef NDEBUG
 	swapCreateFlags |= D3D11_CREATE_DEVICE_DEBUG;
-#endif
+	#endif
 
 	// for checking results of d3d functions
 	HRESULT hr;
@@ -51,7 +53,7 @@ Graphics::Graphics(HWND hWnd, int width, int height)
 		nullptr,
 		D3D_DRIVER_TYPE_HARDWARE,
 		nullptr,
-		swapCreateFlags,// 0,
+		swapCreateFlags,
 		nullptr,
 		0,
 		D3D11_SDK_VERSION,
@@ -63,9 +65,19 @@ Graphics::Graphics(HWND hWnd, int width, int height)
 	));
 
 	// gain access to texture subresource in swap chain (back buffer)
-	wrl::ComPtr<ID3D11Resource> pBackBuffer = nullptr;
-	GFX_THROW_INFO(pSwap->GetBuffer(0, __uuidof(ID3D11Resource), &pBackBuffer));
-	GFX_THROW_INFO(pDevice->CreateRenderTargetView(pBackBuffer.Get(), nullptr, &pTarget));
+	wrl::ComPtr<ID3D11Texture2D> pBackBuffer;
+	GFX_THROW_INFO(pSwap->GetBuffer(0, __uuidof(ID3D11Texture2D), &pBackBuffer));
+	pTarget = std::shared_ptr<Bind::RenderTarget>{ new Bind::OutputOnlyRenderTarget(*this,pBackBuffer.Get()) };
+
+	// viewport always fullscreen (for now)
+	D3D11_VIEWPORT vp;
+	vp.Width = (float)width;
+	vp.Height = (float)height;
+	vp.MinDepth = 0.0f;
+	vp.MaxDepth = 1.0f;
+	vp.TopLeftX = 0.0f;
+	vp.TopLeftY = 0.0f;
+	pContext->RSSetViewports(1u, &vp);
 
 	// init imgui d3d impl
 	ImGui_ImplDX11_Init(pDevice.Get(), pContext.Get());
@@ -83,17 +95,17 @@ void Graphics::EndFrame()
 	{
 		ImGui::Render();
 		ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
-}
+	}
 
 	HRESULT hr;
-#ifndef NDEBUG
+	#ifndef NDEBUG
 	infoManager.Set();
-#endif
+	#endif
 	if (FAILED(hr = pSwap->Present(1u, 0u)))
 	{
 		if (hr == DXGI_ERROR_DEVICE_REMOVED)
 		{
-			throw GFX_DEVICE_REMOVED_EXCEPT((HRESULT)pDevice->GetDeviceRemovedReason());
+			throw GFX_DEVICE_REMOVED_EXCEPT(pDevice->GetDeviceRemovedReason());
 		}
 		else
 		{
@@ -111,39 +123,6 @@ void Graphics::BeginFrame(float red, float green, float blue) noexcept
 		ImGui_ImplWin32_NewFrame();
 		ImGui::NewFrame();
 	}
-
-	const float color[] = { red,green,blue,0.0f };
-	pContext->ClearRenderTargetView(pTarget.Get(), color);
-}
-
-void Graphics::BindSwapBuffer() noexcept
-{
-	pContext->OMSetRenderTargets(1u, pTarget.GetAddressOf(), nullptr);
-
-	// configure viewport
-	D3D11_VIEWPORT vp;
-	vp.Width = (float)width;
-	vp.Height = (float)height;
-	vp.MinDepth = 0.0f;
-	vp.MaxDepth = 1.0f;
-	vp.TopLeftX = 0.0f;
-	vp.TopLeftY = 0.0f;
-	pContext->RSSetViewports(1u, &vp);
-}
-
-void Graphics::BindSwapBuffer(const DepthStencil& ds) noexcept
-{
-	pContext->OMSetRenderTargets(1u, pTarget.GetAddressOf(), ds.pDepthStencilView.Get());
-
-	// configure viewport
-	D3D11_VIEWPORT vp;
-	vp.Width = (float)width;
-	vp.Height = (float)height;
-	vp.MinDepth = 0.0f;
-	vp.MaxDepth = 1.0f;
-	vp.TopLeftX = 0.0f;
-	vp.TopLeftY = 0.0f;
-	pContext->RSSetViewports(1u, &vp);
 }
 
 void Graphics::DrawIndexed(UINT count) noxnd
@@ -194,6 +173,11 @@ UINT Graphics::GetWidth() const noexcept
 UINT Graphics::GetHeight() const noexcept
 {
 	return height;
+}
+
+std::shared_ptr<Bind::RenderTarget> Graphics::GetTarget()
+{
+	return pTarget;
 }
 
 

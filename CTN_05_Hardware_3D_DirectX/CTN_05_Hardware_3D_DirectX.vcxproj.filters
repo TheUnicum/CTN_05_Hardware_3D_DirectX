@@ -52,6 +52,12 @@
     <Filter Include="File di origine\Model">
       <UniqueIdentifier>{16152dc8-85ae-48f8-a414-5db981e713f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="File di origine\Jobber\Passlib">
+      <UniqueIdentifier>{bf2d39a6-5a7d-4195-95c9-9f5ccc0e2a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di intestazione\Jobber\Passlib">
+      <UniqueIdentifier>{ed83383c-35f3-45ea-831e-fbb752c86b2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -156,9 +162,6 @@
     <ClCompile Include="src\TestPlane.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
-    <ClCompile Include="src\TransformCbufDoubleboi.cpp">
-      <Filter>File di origine\Bindable</Filter>
-    </ClCompile>
     <ClCompile Include="src\TestCube.cpp">
       <Filter>File di origine\Drawable</Filter>
     </ClCompile>
@@ -216,20 +219,44 @@
     <ClCompile Include="src\Model.cpp">
       <Filter>File di origine\Model</Filter>
     </ClCompile>
-    <ClCompile Include="src\RenderTarget.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DepthStencil.cpp">
-      <Filter>File di origine</Filter>
-    </ClCompile>
     <ClCompile Include="src\GraphicsResource.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="src\FrameCommander.cpp">
+    <ClCompile Include="src\BufferClearPass.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\RenderQueuePass.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FullscreenPass.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderGraphCompileException.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PassOutput.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PassInput.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\StepLinkingProbe.cpp">
+      <Filter>File di origine\Jobber</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderTarget.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DepthStencil.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BindingPass.cpp">
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
     <ClCompile Include="src\Pass.cpp">
-      <Filter>File di origine</Filter>
+      <Filter>File di origine\Jobber\Passlib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderGraph.cpp">
+      <Filter>File di origine\Jobber</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -380,9 +407,6 @@
     <ClInclude Include="src\TestPlane.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
-    <ClInclude Include="src\TransformCbufDoubleboi.h">
-      <Filter>File di intestazione\Bindable</Filter>
-    </ClInclude>
     <ClInclude Include="src\Cube.h">
       <Filter>File di intestazione\Geometry</Filter>
     </ClInclude>
@@ -431,13 +455,7 @@
     <ClInclude Include="src\Technique.h">
       <Filter>File di intestazione\Jobber</Filter>
     </ClInclude>
-    <ClInclude Include="src\FrameCommander.h">
-      <Filter>File di intestazione\Jobber</Filter>
-    </ClInclude>
     <ClInclude Include="src\Job.h">
-      <Filter>File di intestazione\Jobber</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Pass.h">
       <Filter>File di intestazione\Jobber</Filter>
     </ClInclude>
     <ClInclude Include="src\NullPixelShader.h">
@@ -467,17 +485,53 @@
     <ClInclude Include="src\ModelProbe.h">
       <Filter>File di intestazione\Model</Filter>
     </ClInclude>
-    <ClInclude Include="src\RenderTarget.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
     <ClInclude Include="src\GraphicsResource.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DepthStencil.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
     <ClInclude Include="src\BlurPack.h">
       <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufferClearPass.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufferResource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LambertianPass.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BindingPass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FullscreenPass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PassInput.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PassOutput.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderGraphCompileException.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderQueuePass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderGraph.h">
+      <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StepLinkingProbe.h">
+      <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderTarget.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DepthStencil.h">
+      <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

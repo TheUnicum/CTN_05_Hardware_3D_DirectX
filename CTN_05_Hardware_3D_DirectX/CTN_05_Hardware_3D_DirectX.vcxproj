@@ -97,8 +97,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\RenderQueuePass.cpp" />
+    <ClCompile Include="src\RenderGraphCompileException.cpp" />
+    <ClCompile Include="src\RenderGraph.cpp" />
+    <ClCompile Include="src\PassOutput.cpp" />
+    <ClCompile Include="src\PassInput.cpp" />
+    <ClCompile Include="src\FullscreenPass.cpp" />
+    <ClCompile Include="src\BufferClearPass.cpp" />
+    <ClCompile Include="src\BindingPass.cpp" />
     <ClCompile Include="src\Pass.cpp" />
-    <ClCompile Include="src\FrameCommander.cpp" />
     <ClCompile Include="src\DepthStencil.cpp" />
     <ClCompile Include="src\GraphicsResource.cpp" />
     <ClCompile Include="src\RenderTarget.cpp" />
@@ -150,14 +157,24 @@
     <ClCompile Include="src\WindowsMessageMap.cpp" />
     <ClCompile Include="src\Window.cpp" />
     <ClCompile Include="src\TestPlane.cpp" />
-    <ClCompile Include="src\TransformCbufDoubleboi.cpp" />
     <ClCompile Include="src\TestCube.cpp" />
     <ClCompile Include="src\TexturePreprocessor.cpp" />
     <ClCompile Include="src\Testing.cpp" />
     <ClCompile Include="src\Step.cpp" />
     <ClCompile Include="src\Technique.cpp" />
+    <ClCompile Include="src\StepLinkingProbe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\RenderQueuePass.h" />
+    <ClInclude Include="src\RenderGraphCompileException.h" />
+    <ClInclude Include="src\RenderGraph.h" />
+    <ClInclude Include="src\PassOutput.h" />
+    <ClInclude Include="src\PassInput.h" />
+    <ClInclude Include="src\LambertianPass.h" />
+    <ClInclude Include="src\FullscreenPass.h" />
+    <ClInclude Include="src\BufferResource.h" />
+    <ClInclude Include="src\BufferClearPass.h" />
+    <ClInclude Include="src\BindingPass.h" />
     <ClInclude Include="src\BlurPack.h" />
     <ClInclude Include="src\DepthStencil.h" />
     <ClInclude Include="src\GraphicsResource.h" />
@@ -169,7 +186,6 @@
     <ClInclude Include="src\Material.h" />
     <ClInclude Include="src\PerfLog.h" />
     <ClInclude Include="src\NullPixelShader.h" />
-    <ClInclude Include="src\FrameCommander.h" />
     <ClInclude Include="src\Job.h" />
     <ClInclude Include="src\Pass.h" />
     <ClInclude Include="src\LayoutCodex.h" />
@@ -190,13 +206,13 @@
     <ClInclude Include="src\Mesh.h" />
     <ClInclude Include="src\Vertex.h" />
     <ClInclude Include="src\TestPlane.h" />
-    <ClInclude Include="src\TransformCbufDoubleboi.h" />
     <ClInclude Include="src\TestCube.h" />
     <ClInclude Include="src\Testing.h" />
     <ClInclude Include="src\Stencil.h" />
     <ClInclude Include="src\Step.h" />
     <ClInclude Include="src\Technique.h" />
     <ClInclude Include="src\TechniqueProbe.h" />
+    <ClInclude Include="src\StepLinkingProbe.h" />
     <None Include="src\process.json" />
     <None Include="Transform.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compute</ShaderType>
