@@ -1,4 +1,3 @@
-
 #include "Technique.h"
 #include "Drawable.h"
 #include "TechniqueProbe.h"
@@ -57,7 +56,7 @@ const std::string& Technique::GetName() const noexcept
 	return name;
 }
 
-void Technique::Link(RenderGraph& rg)
+void Technique::Link(Rgph::RenderGraph& rg)
 {
 	for (auto& step : steps)
 	{

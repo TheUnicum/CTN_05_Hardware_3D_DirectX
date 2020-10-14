@@ -186,7 +186,6 @@
     <ClInclude Include="src\BufferResource.h" />
     <ClInclude Include="src\BufferClearPass.h" />
     <ClInclude Include="src\BindingPass.h" />
-    <ClInclude Include="src\BlurPack.h" />
     <ClInclude Include="src\DepthStencil.h" />
     <ClInclude Include="src\GraphicsResource.h" />
     <ClInclude Include="src\RenderTarget.h" />

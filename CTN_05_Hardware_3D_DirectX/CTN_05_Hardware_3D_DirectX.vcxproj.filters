@@ -500,9 +500,6 @@
     <ClInclude Include="src\GraphicsResource.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="src\BlurPack.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
     <ClInclude Include="src\BufferClearPass.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
