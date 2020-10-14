@@ -165,6 +165,8 @@
     <ClCompile Include="src\StepLinkingProbe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\OutlineDrawingPass.h" />
+    <ClInclude Include="src\OutlineMaskGenerationPass.h" />
     <ClInclude Include="src\RenderQueuePass.h" />
     <ClInclude Include="src\RenderGraphCompileException.h" />
     <ClInclude Include="src\RenderGraph.h" />
