@@ -99,6 +99,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\CameraContainer.cpp" />
     <ClCompile Include="src\BlurOutlineRenderGraph.cpp" />
     <ClCompile Include="src\HorizontalBlurPass.cpp" />
     <ClCompile Include="src\RenderQueuePass.cpp" />
@@ -172,6 +173,7 @@
     <ClCompile Include="src\VerticalBlurPass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\CameraContainer.h" />
     <ClInclude Include="src\ChiliWRL.h" />
     <ClInclude Include="src\Source.h" />
     <ClInclude Include="src\BlurOutlineDrawingPass.h" />

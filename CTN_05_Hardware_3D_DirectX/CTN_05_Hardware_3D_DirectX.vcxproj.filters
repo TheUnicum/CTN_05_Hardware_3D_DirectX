@@ -279,6 +279,9 @@
     <ClCompile Include="src\Source.cpp">
       <Filter>File di origine\Jobber\Passlib\Base</Filter>
     </ClCompile>
+    <ClCompile Include="src\CameraContainer.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -579,6 +582,9 @@
       <Filter>File di intestazione\Jobber\Passlib</Filter>
     </ClInclude>
     <ClInclude Include="src\ChiliWRL.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CameraContainer.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
