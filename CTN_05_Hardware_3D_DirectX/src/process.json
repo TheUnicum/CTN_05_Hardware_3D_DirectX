@@ -2,11 +2,9 @@
   "enabled": false,
   "commands": [
     {
-      "command": "make-stripes",
+      "command": "publish",
       "params": {
-        "dest": "src\\Images\\stripes.png",
-        "size": 256,
-        "stripeWidth": 4
+        "dest": "C:\\Users\\Chili\\Desktop\\PubTest"
       }
     }
   ]
