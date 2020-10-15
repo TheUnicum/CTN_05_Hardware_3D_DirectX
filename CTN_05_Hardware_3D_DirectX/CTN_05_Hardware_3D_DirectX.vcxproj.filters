@@ -578,6 +578,9 @@
     <ClInclude Include="src\Sink.h">
       <Filter>File di intestazione\Jobber\Passlib</Filter>
     </ClInclude>
+    <ClInclude Include="src\ChiliWRL.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
