@@ -642,5 +642,7 @@
     <FxCompile Include="Fullscreen_VS.hlsl" />
     <FxCompile Include="Blur_PS.hlsl" />
     <FxCompile Include="BlurOutline_PS.hlsl" />
+    <FxCompile Include="PhongDifMskSpc_PS.hlsl" />
+    <FxCompile Include="PhongDifMskSpc_VS.hlsl" />
   </ItemGroup>
 </Project>
