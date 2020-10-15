@@ -87,10 +87,10 @@ modelPath(path.string())
 		// common (post)
 		{
 			step.AddBindable(std::make_shared<TransformCbuf>(gfx, 0u));
-			auto pvs = VertexShader::Resolve(gfx, shaderCode + "_VS.cso");
+			auto pvs = VertexShader::Resolve(gfx, "ShaderBins\\" + shaderCode + "_VS.cso");
 			auto pvsbc = pvs->GetBytecode();
 			step.AddBindable(std::move(pvs));
-			step.AddBindable(PixelShader::Resolve(gfx, shaderCode + "_PS.cso"));
+			step.AddBindable(PixelShader::Resolve(gfx, "ShaderBins\\" + shaderCode + "_PS.cso"));
 			step.AddBindable(InputLayout::Resolve(gfx, vtxLayout, pvsbc));
 			if (hasTexture)
 			{
@@ -133,7 +133,7 @@ modelPath(path.string())
 			Step mask("outlineMask");
 
 			// TODO: better sub-layout generation tech for future consideration maybe
-			mask.AddBindable(InputLayout::Resolve(gfx, vtxLayout, VertexShader::Resolve(gfx, "Solid_VS.cso")->GetBytecode()));
+			mask.AddBindable(InputLayout::Resolve(gfx, vtxLayout, VertexShader::Resolve(gfx, "ShaderBins\\Solid_VS.cso")->GetBytecode()));
 
 			mask.AddBindable(std::make_shared<TransformCbuf>(gfx));
 
@@ -153,7 +153,7 @@ modelPath(path.string())
 			}
 
 			// TODO: better sub-layout generation tech for future consideration maybe
-			draw.AddBindable(InputLayout::Resolve(gfx, vtxLayout, VertexShader::Resolve(gfx, "Solid_VS.cso")->GetBytecode()));
+			draw.AddBindable(InputLayout::Resolve(gfx, vtxLayout, VertexShader::Resolve(gfx, "ShaderBins\\Solid_VS.cso")->GetBytecode()));
 
 			draw.AddBindable(std::make_shared<TransformCbuf>(gfx));
 

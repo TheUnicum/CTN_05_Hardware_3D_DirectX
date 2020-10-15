@@ -600,11 +600,11 @@
     <None Include="src\DXTrace.inl">
       <Filter>File di intestazione</Filter>
     </None>
-    <None Include="Transform.hlsl" />
-    <None Include="LightVectorData.hlsl" />
     <None Include="ShaderOps.hlsl" />
     <None Include="PointLight.hlsl" />
     <None Include="src\process.json" />
+    <None Include="Transform.hlsl" />
+    <None Include="LightVectorData.hlsl" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="PhongPSNormalMapObject.hlsl">

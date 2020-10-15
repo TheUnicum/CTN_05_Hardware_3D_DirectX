@@ -30,11 +30,11 @@ TestCube::TestCube(Graphics& gfx, float size)
 			only.AddBindable(Texture::Resolve(gfx, "src\\Images\\brickwall.jpg"));
 			only.AddBindable(Sampler::Resolve(gfx));
 
-			auto pvs = VertexShader::Resolve(gfx, "PhongDif_VS.cso");
+			auto pvs = VertexShader::Resolve(gfx, "ShaderBins\\PhongDif_VS.cso");
 			auto pvsbc = pvs->GetBytecode();
 			only.AddBindable(std::move(pvs));
 
-			only.AddBindable(PixelShader::Resolve(gfx, "PhongDif_PS.cso"));
+			only.AddBindable(PixelShader::Resolve(gfx, "ShaderBins\\PhongDif_PS.cso"));
 
 			Dcb::RawLayout lay;
 			lay.Add<Dcb::Float3>("specularColor");
@@ -63,7 +63,7 @@ TestCube::TestCube(Graphics& gfx, float size)
 			Step mask("outlineMask");
 
 			// TODO: better sub-layout generation tech for future consideration maybe
-			mask.AddBindable(InputLayout::Resolve(gfx, model.vertices.GetLayout(), VertexShader::Resolve(gfx, "Solid_VS.cso")->GetBytecode()));
+			mask.AddBindable(InputLayout::Resolve(gfx, model.vertices.GetLayout(), VertexShader::Resolve(gfx, "ShaderBins\\Solid_VS.cso")->GetBytecode()));
 
 			mask.AddBindable(std::move(tcb));
 
@@ -81,7 +81,7 @@ TestCube::TestCube(Graphics& gfx, float size)
 			draw.AddBindable(std::make_shared<Bind::CachingPixelConstantBufferEx>(gfx, buf, 1u));
 
 			// TODO: better sub-layout generation tech for future consideration maybe
-			draw.AddBindable(InputLayout::Resolve(gfx, model.vertices.GetLayout(), VertexShader::Resolve(gfx, "Solid_VS.cso")->GetBytecode()));
+			draw.AddBindable(InputLayout::Resolve(gfx, model.vertices.GetLayout(), VertexShader::Resolve(gfx, "ShaderBins\\Solid_VS.cso")->GetBytecode()));
 
 			draw.AddBindable(std::make_shared<TransformCbuf>(gfx));
 

@@ -22,11 +22,11 @@ SolidSphere::SolidSphere(Graphics& gfx, float radius)
 		Technique solid;
 		Step only("lambertian");
 
-		auto pvs = VertexShader::Resolve(gfx, "Solid_VS.cso");
+		auto pvs = VertexShader::Resolve(gfx, "ShaderBins\\Solid_VS.cso");
 		auto pvsbc = pvs->GetBytecode();
 		only.AddBindable(std::move(pvs));
 
-		only.AddBindable(PixelShader::Resolve(gfx, "Solid_PS.cso"));
+		only.AddBindable(PixelShader::Resolve(gfx, "ShaderBins\\Solid_PS.cso"));
 
 		struct PSColorConstant
 		{
