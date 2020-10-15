@@ -644,5 +644,8 @@
     <FxCompile Include="BlurOutline_PS.hlsl" />
     <FxCompile Include="PhongDifMskSpc_PS.hlsl" />
     <FxCompile Include="PhongDifMskSpc_VS.hlsl" />
+    <FxCompile Include="Test2_VS.hlsl" />
+    <FxCompile Include="Test_PS.hlsl" />
+    <FxCompile Include="Test1_VS.hlsl" />
   </ItemGroup>
 </Project>
