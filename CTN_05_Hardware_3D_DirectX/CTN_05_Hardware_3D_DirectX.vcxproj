@@ -237,6 +237,7 @@
     <ClInclude Include="src\TransformCbufScaling.h" />
     <ClInclude Include="src\TestModelProbe.h" />
     <ClInclude Include="src\VerticalBlurPass.h" />
+    <ClInclude Include="src\WireframePass.h" />
     <FxCompile Include="Test1_VS.hlsl">
       <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)\ShaderBins\%(Filename).cso</ObjectFileOutput>
       <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)\ShaderBins\%(Filename).cso</ObjectFileOutput>

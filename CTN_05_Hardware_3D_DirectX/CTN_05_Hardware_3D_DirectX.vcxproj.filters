@@ -605,6 +605,9 @@
     <ClInclude Include="src\Frustum.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\WireframePass.h">
+      <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
