@@ -31,11 +31,11 @@ TestCube::TestCube(Graphics& gfx, float size)
 			only.AddBindable(Texture::Resolve(gfx, "src\\Images\\brickwall.jpg"));
 			only.AddBindable(Sampler::Resolve(gfx));
 
-			auto pvs = VertexShader::Resolve(gfx, "ShaderBins\\PhongDif_VS.cso");
+			auto pvs = VertexShader::Resolve(gfx, "ShaderBins\\ShadowTest_VS.cso");
 			only.AddBindable(InputLayout::Resolve(gfx, model.vertices.GetLayout(), *pvs));
 			only.AddBindable(std::move(pvs));
 
-			only.AddBindable(PixelShader::Resolve(gfx, "ShaderBins\\PhongDif_PS.cso"));
+			only.AddBindable(PixelShader::Resolve(gfx, "ShaderBins\\ShadowTest_PS.cso"));
 
 			Dcb::RawLayout lay;
 			lay.Add<Dcb::Float3>("specularColor");

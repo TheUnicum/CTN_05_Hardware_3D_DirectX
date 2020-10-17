@@ -297,6 +297,9 @@
     <ClCompile Include="src\ShadowCameraCBuf.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
+    <ClCompile Include="src\ShadowSampler.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -623,6 +626,9 @@
     <ClInclude Include="src\ShadowCameraCBuf.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
+    <ClInclude Include="src\ShadowSampler.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -692,5 +698,7 @@
     <FxCompile Include="Test2_VS.hlsl" />
     <FxCompile Include="Test_PS.hlsl" />
     <FxCompile Include="Test1_VS.hlsl" />
+    <FxCompile Include="ShadowTest_VS.hlsl" />
+    <FxCompile Include="ShadowTest_PS.hlsl" />
   </ItemGroup>
 </Project>
