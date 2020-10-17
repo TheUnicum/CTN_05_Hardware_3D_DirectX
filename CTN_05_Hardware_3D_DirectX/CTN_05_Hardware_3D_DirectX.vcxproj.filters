@@ -294,6 +294,9 @@
     <ClCompile Include="src\Frustum.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\ShadowCameraCBuf.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -616,6 +619,9 @@
     </ClInclude>
     <ClInclude Include="src\ShadowMappingPass.h">
       <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShadowCameraCBuf.h">
+      <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

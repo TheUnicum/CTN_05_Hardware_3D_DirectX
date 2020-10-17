@@ -99,6 +99,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ShadowCameraCBuf.cpp" />
     <ClCompile Include="src\Frustum.cpp" />
     <ClCompile Include="src\CameraIndicator.cpp" />
     <ClCompile Include="src\Projection.cpp" />
@@ -176,6 +177,7 @@
     <ClCompile Include="src\VerticalBlurPass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ShadowCameraCBuf.h" />
     <ClInclude Include="src\ShadowMappingPass.h" />
     <ClInclude Include="src\Channels.h" />
     <ClInclude Include="src\Frustum.h" />
