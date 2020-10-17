@@ -37,4 +37,5 @@ private:
 	Model sponza{ wnd.Gfx(),"src\\models\\sponza\\sponza.obj",1.0f / 20.0f };
 	Model gobber{ wnd.Gfx(),"src\\models\\gobber\\GoblinX.obj",4.0f };
 	Model nano{ wnd.Gfx(),"src\\models\\nano_textured\\nanosuit.obj",2.0f };
+	bool savingDepth = false;
 };
