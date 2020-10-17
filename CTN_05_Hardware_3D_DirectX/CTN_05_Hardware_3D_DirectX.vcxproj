@@ -176,6 +176,7 @@
     <ClCompile Include="src\VerticalBlurPass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ShadowMappingPass.h" />
     <ClInclude Include="src\Channels.h" />
     <ClInclude Include="src\Frustum.h" />
     <ClInclude Include="src\CameraIndicator.h" />

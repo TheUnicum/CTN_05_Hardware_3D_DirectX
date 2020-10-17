@@ -614,6 +614,9 @@
     <ClInclude Include="src\Channels.h">
       <Filter>File di intestazione\Jobber\Graphlib</Filter>
     </ClInclude>
+    <ClInclude Include="src\ShadowMappingPass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
