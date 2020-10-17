@@ -6,6 +6,7 @@
 #include "DynamicConstant.h"
 #include "TechniqueProbe.h"
 #include "TransformCbufScaling.h"
+#include "Channels.h"
 
 TestCube::TestCube(Graphics& gfx, float size)
 {
@@ -23,7 +24,7 @@ TestCube::TestCube(Graphics& gfx, float size)
 	auto tcb = std::make_shared<TransformCbuf>(gfx);
 
 	{
-		Technique shade("Shade");
+		Technique shade("Shade", Chan::main);
 		{
 			Step only("lambertian");
 
@@ -46,6 +47,7 @@ TestCube::TestCube(Graphics& gfx, float size)
 			buf["specularGloss"] = 20.0f;
 			only.AddBindable(std::make_shared<Bind::CachingPixelConstantBufferEx>(gfx, buf, 1u));
 
+
 			only.AddBindable(Rasterizer::Resolve(gfx, false));
 
 			only.AddBindable(tcb);
@@ -56,7 +58,7 @@ TestCube::TestCube(Graphics& gfx, float size)
 	}
 
 	{
-		Technique outline("Outline");
+		Technique outline("Outline", Chan::main);
 		{
 			Step mask("outlineMask");
 

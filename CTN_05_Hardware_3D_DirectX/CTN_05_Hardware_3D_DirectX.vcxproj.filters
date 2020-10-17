@@ -64,6 +64,9 @@
     <Filter Include="File di origine\Jobber\Passlib\Base">
       <UniqueIdentifier>{6c55211e-eaf7-4dd2-b97e-2137d7522dd1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="File di intestazione\Jobber\Graphlib">
+      <UniqueIdentifier>{f7a26029-2f1d-4f42-8aed-12aebaef1c11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -607,6 +610,9 @@
     </ClInclude>
     <ClInclude Include="src\WireframePass.h">
       <Filter>File di intestazione\Jobber</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Channels.h">
+      <Filter>File di intestazione\Jobber\Graphlib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
