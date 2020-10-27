@@ -303,6 +303,9 @@
     <ClCompile Include="src\ShadowSampler.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
+    <ClCompile Include="src\ShadowRasterizer.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -630,6 +633,9 @@
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
     <ClInclude Include="src\ShadowSampler.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShadowRasterizer.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
   </ItemGroup>
