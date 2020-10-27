@@ -17,7 +17,7 @@ namespace Bind
 		static size_t ShadowSamplerIndex(bool bilin, bool hwPcf);
 		static Microsoft::WRL::ComPtr<ID3D11SamplerState> MakeSampler(Graphics& gfx, bool bilin, bool hwPcf);
 	protected:
-		size_t curSampler;
+		size_t curSampler = 0;
 		Microsoft::WRL::ComPtr<ID3D11SamplerState> samplers[4];
 	};
 }
