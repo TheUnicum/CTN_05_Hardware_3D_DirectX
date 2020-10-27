@@ -67,6 +67,9 @@
     <Filter Include="File di intestazione\Jobber\Graphlib">
       <UniqueIdentifier>{f7a26029-2f1d-4f42-8aed-12aebaef1c11}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Shader\Common">
+      <UniqueIdentifier>{8bc3783c-04e2-4650-97f7-573b15571d4b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WinMain.cpp">
@@ -651,16 +654,19 @@
     <None Include="src\DXTrace.inl">
       <Filter>File di intestazione</Filter>
     </None>
-    <None Include="ShaderOps.hlsl" />
-    <None Include="PointLight.hlsl" />
     <None Include="src\process.json" />
-    <None Include="LightVectorData.hlsl" />
-    <None Include="Transform.hlsl" />
+    <None Include="PointLight.hlsli" />
+    <None Include="Transform.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="ShaderOps.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="LightVectorData.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="PhongPSNormalMapObject.hlsl">
-      <Filter>Shader</Filter>
-    </FxCompile>
     <FxCompile Include="Solid_PS.hlsl" />
     <FxCompile Include="Solid_VS.hlsl" />
     <FxCompile Include="Phong_VS.hlsl">
@@ -695,9 +701,6 @@
     <FxCompile Include="BlurOutline_PS.hlsl" />
     <FxCompile Include="PhongDifMskSpc_PS.hlsl" />
     <FxCompile Include="PhongDifMskSpc_VS.hlsl" />
-    <FxCompile Include="Test2_VS.hlsl" />
-    <FxCompile Include="Test_PS.hlsl" />
-    <FxCompile Include="Test1_VS.hlsl" />
     <FxCompile Include="ShadowTest_VS.hlsl" />
     <FxCompile Include="ShadowTest_PS.hlsl" />
   </ItemGroup>
