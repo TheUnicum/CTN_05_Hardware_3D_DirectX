@@ -655,7 +655,6 @@
       <Filter>File di intestazione</Filter>
     </None>
     <None Include="src\process.json" />
-    <None Include="PointLight.hlsli" />
     <None Include="Transform.hlsli">
       <Filter>Shader\Common</Filter>
     </None>
@@ -665,7 +664,15 @@
     <None Include="LightVectorData.hlsli">
       <Filter>Shader\Common</Filter>
     </None>
-    <None Include="VShadow.hlsli" />
+    <None Include="VShadow.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="PointLight.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="PShadow.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Solid_PS.hlsl" />
