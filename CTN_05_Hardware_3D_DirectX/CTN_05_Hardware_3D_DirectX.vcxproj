@@ -489,6 +489,7 @@
     <ClInclude Include="src\WindowsMessageMap.h" />
     <ClInclude Include="src\Window.h" />
     <ClInclude Include="src\WindowsThrowMacros.h" />
+    <None Include="VShadow.hlsli" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="src\CTN_05_Hardware_3D_DirectX.rc" />
