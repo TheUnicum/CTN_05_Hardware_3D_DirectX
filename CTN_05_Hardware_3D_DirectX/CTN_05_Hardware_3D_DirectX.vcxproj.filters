@@ -301,7 +301,7 @@
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
     <ClCompile Include="src\ShadowSampler.cpp">
-      <Filter>File di origine</Filter>
+      <Filter>File di origine\Bindable</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -630,7 +630,7 @@
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
     <ClInclude Include="src\ShadowSampler.h">
-      <Filter>File di intestazione</Filter>
+      <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
