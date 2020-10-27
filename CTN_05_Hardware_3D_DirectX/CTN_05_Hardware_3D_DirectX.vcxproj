@@ -486,6 +486,8 @@
     <ClInclude Include="src\Window.h" />
     <ClInclude Include="src\WindowsThrowMacros.h" />
     <None Include="VShadow.hlsli" />
+    <None Include="_PShadow_Dynamic.hlsli" />
+    <None Include="_PShadow_Static.hlsli" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="src\CTN_05_Hardware_3D_DirectX.rc" />

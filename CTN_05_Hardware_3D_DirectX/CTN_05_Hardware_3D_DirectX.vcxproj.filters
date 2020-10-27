@@ -679,6 +679,12 @@
     <None Include="PShadow.hlsli">
       <Filter>Shader\Common</Filter>
     </None>
+    <None Include="_PShadow_Static.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="_PShadow_Dynamic.hlsli">
+      <Filter>Shader\Common</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Solid_PS.hlsl" />
