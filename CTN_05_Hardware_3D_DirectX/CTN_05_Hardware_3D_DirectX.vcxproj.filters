@@ -703,7 +703,6 @@
     <FxCompile Include="PhongDif_PS.hlsl" />
     <FxCompile Include="PhongPS.hlsl" />
     <FxCompile Include="PhongVS.hlsl" />
-    <FxCompile Include="Offset_VS.hlsl" />
     <FxCompile Include="Fullscreen_VS.hlsl" />
     <FxCompile Include="Blur_PS.hlsl" />
     <FxCompile Include="BlurOutline_PS.hlsl" />
@@ -711,5 +710,8 @@
     <FxCompile Include="PhongDifMskSpc_VS.hlsl" />
     <FxCompile Include="ShadowTest_VS.hlsl" />
     <FxCompile Include="ShadowTest_PS.hlsl" />
+    <FxCompile Include="Offset_VS_deprecated.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
