@@ -99,6 +99,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\CubeTexture.cpp" />
     <ClCompile Include="src\ShadowRasterizer.cpp" />
     <ClCompile Include="src\ShadowSampler.cpp" />
     <ClCompile Include="src\ShadowCameraCBuf.cpp" />
@@ -133,6 +134,7 @@
     <ClCompile Include="src\Blender.cpp" />
     <ClCompile Include="src\ChiliXM.cpp" />
     <ClCompile Include="src\Mesh.cpp" />
+    <ClCompile Include="src\SkyboxTransformCbuf.cpp" />
     <ClCompile Include="src\SolidSphere.cpp" />
     <ClCompile Include="src\PointLight.cpp" />
     <ClCompile Include="src\Camera.cpp" />
@@ -179,6 +181,7 @@
     <ClCompile Include="src\VerticalBlurPass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\CubeTexture.h" />
     <ClInclude Include="src\ShadowRasterizer.h" />
     <ClInclude Include="src\ShadowSampler.h" />
     <ClInclude Include="src\ShadowCameraCBuf.h" />
@@ -189,6 +192,8 @@
     <ClInclude Include="src\Projection.h" />
     <ClInclude Include="src\CameraContainer.h" />
     <ClInclude Include="src\ChiliWRL.h" />
+    <ClInclude Include="src\SkyboxPass.h" />
+    <ClInclude Include="src\SkyboxTransformCbuf.h" />
     <ClInclude Include="src\Source.h" />
     <ClInclude Include="src\BlurOutlineDrawingPass.h" />
     <ClInclude Include="src\BlurOutlineRenderGraph.h" />
@@ -425,6 +430,20 @@
     <None Include="PointLight.hlsli">
       <FileType>Document</FileType>
     </None>
+    <FxCompile Include="Skybox_PS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)\ShaderBins\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)\ShaderBins\%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="Skybox_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)\ShaderBins\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)\ShaderBins\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
     <FxCompile Include="Solid_PS.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>

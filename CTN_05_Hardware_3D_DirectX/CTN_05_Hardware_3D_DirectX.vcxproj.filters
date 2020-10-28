@@ -306,6 +306,12 @@
     <ClCompile Include="src\ShadowRasterizer.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
+    <ClCompile Include="src\SkyboxTransformCbuf.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CubeTexture.cpp">
+      <Filter>File di origine\Bindable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -638,6 +644,15 @@
     <ClInclude Include="src\ShadowRasterizer.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
+    <ClInclude Include="src\SkyboxTransformCbuf.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CubeTexture.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkyboxPass.h">
+      <Filter>File di intestazione\Jobber\Passlib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -723,6 +738,12 @@
     <FxCompile Include="ShadowTest_VS.hlsl" />
     <FxCompile Include="ShadowTest_PS.hlsl" />
     <FxCompile Include="Offset_VS_deprecated.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Skybox_VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Skybox_PS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
   </ItemGroup>
