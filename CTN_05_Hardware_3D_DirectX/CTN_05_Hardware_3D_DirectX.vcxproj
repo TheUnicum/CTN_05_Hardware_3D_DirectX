@@ -99,6 +99,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\cnpy.cpp" />
     <ClCompile Include="src\CubeTexture.cpp" />
     <ClCompile Include="src\ShadowRasterizer.cpp" />
     <ClCompile Include="src\ShadowSampler.cpp" />
@@ -181,6 +182,7 @@
     <ClCompile Include="src\VerticalBlurPass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\cnpy.h" />
     <ClInclude Include="src\CubeTexture.h" />
     <ClInclude Include="src\ShadowRasterizer.h" />
     <ClInclude Include="src\ShadowSampler.h" />

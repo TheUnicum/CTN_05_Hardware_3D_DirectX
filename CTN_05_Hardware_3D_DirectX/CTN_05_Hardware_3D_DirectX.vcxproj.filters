@@ -312,6 +312,9 @@
     <ClCompile Include="src\CubeTexture.cpp">
       <Filter>File di origine\Bindable</Filter>
     </ClCompile>
+    <ClCompile Include="src\cnpy.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\WindowsMessageMap.h">
@@ -655,6 +658,9 @@
     </ClInclude>
     <ClInclude Include="src\Viewport.h">
       <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cnpy.h">
+      <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

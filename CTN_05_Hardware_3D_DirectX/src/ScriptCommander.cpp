@@ -4,6 +4,7 @@
 #include <filesystem>
 #include "json.hpp"
 #include "TexturePreprocessor.h"
+#include "Testing.h"
 
 namespace jso = nlohmann;
 using namespace std::string_literals;
@@ -56,7 +57,14 @@ ScriptCommander::ScriptCommander(const std::vector<std::string>& args)
 					Publish(params.at("dest"));
 					abort = true;
 				}
-				else
+				else if (commandName == "run-tests")
+				{
+					TestDynamicConstant();
+					TestDynamicMeshLoading();
+					TestScaleMatrixTranslation();
+					TestNumpy();
+					abort = true;
+				}
 				{
 					throw SCRIPT_ERROR("Unknown command: "s + commandName);
 				}
