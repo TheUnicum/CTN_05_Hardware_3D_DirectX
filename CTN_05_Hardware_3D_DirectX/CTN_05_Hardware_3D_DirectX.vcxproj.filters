@@ -440,9 +440,6 @@
     <ClInclude Include="src\SolidSphere.h">
       <Filter>File di intestazione\Drawable</Filter>
     </ClInclude>
-    <ClInclude Include="src\Vertex.h">
-      <Filter>File di intestazione</Filter>
-    </ClInclude>
     <ClInclude Include="src\BindableCommon.h">
       <Filter>File di intestazione\Bindable</Filter>
     </ClInclude>
@@ -653,6 +650,12 @@
     <ClInclude Include="src\SkyboxPass.h">
       <Filter>File di intestazione\Jobber\Passlib</Filter>
     </ClInclude>
+    <ClInclude Include="src\Vertex.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Viewport.h">
+      <Filter>File di intestazione\Bindable</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="src\chili.ico">
@@ -744,6 +747,9 @@
       <Filter>Shader</Filter>
     </FxCompile>
     <FxCompile Include="Skybox_PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Shadow_VS.hlsl">
       <Filter>Shader</Filter>
     </FxCompile>
   </ItemGroup>
